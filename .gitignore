@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+project-lock.json
+
 # production
 /build
 
