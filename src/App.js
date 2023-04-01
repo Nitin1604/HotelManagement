@@ -19,7 +19,7 @@ function App() {
               </div>
             </div>
           </div>
-          {/* Email Address block start here */}
+          {/* Email Address block ends here */}
 
           {/* Password block start here */}
           <div className="row">
@@ -31,14 +31,14 @@ function App() {
               </div>
             </div>
           </div>
-          {/* Password block start here */}
+          {/* Password block ends here */}
 
         
           {/* Submit Button block start here */}
           <div className='my-2'>
           <button type="submit" className="btn  btn-danger">Submit</button>
           </div>
-          {/* Submit Button block start here */}
+          {/* Submit Button block ends here */}
         </form>
 
       {/* form will ends here */}
