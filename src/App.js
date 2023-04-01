@@ -19,7 +19,7 @@ function App() {
               </div>
             </div>
           </div>
-          {/* Name block will start here */}
+          {/* Name block will ends here */}
 
           <div className='row'>
             <div className="col-sm-4">
