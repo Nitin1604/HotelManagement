@@ -9,6 +9,28 @@ function App() {
       {/* form will start here */}
         <form>
           <h2>Customer's Login Page</h2>
+
+          {/* Name block will start here */}
+          <div className='row'>
+            <div className="col-sm-4">
+              <div className="form-group">
+                <label for="exampleInputName">Name</label>
+                <input className="form-control" id="exampleInputName" placeholder="Enter your name"/>
+              </div>
+            </div>
+          </div>
+          {/* Name block will start here */}
+
+          <div className='row'>
+            <div className="col-sm-4">
+              <div className="form-group">
+                <label for="exampleInputContact">Contact No</label>
+                <input className="form-control" id="exampleInputContact" placeholder="Enter your contact number"/>
+              </div>
+            </div>
+          </div>
+
+
           {/* Email Address block start here */}
           <div className='row'>
             <div className="col-sm-4">
