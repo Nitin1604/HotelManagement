@@ -36,7 +36,7 @@ const ContactComponent = () => {
                         </div>
                         {/* Email block will ends here */}
 
-                        {/* Address block start here */}
+                        {/* Address block start here */} 
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
