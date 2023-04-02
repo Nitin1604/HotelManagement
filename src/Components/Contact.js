@@ -36,27 +36,27 @@ const ContactComponent = () => {
                         </div>
                         {/* Email block will ends here */}
 
-                        {/* Contact block start here */}
-                        <div className="row">
-                            <div className="col-sm-4">
-                                <div className="form-group">
-                                    <label for="exampleInputPassword1">Contact</label>
-                                    <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Enter your password here" />
-                                </div>
-                            </div>
-                        </div>
-                        {/* Contact block ends here */}
-
                         {/* Address block start here */}
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <label for="exampleInputPassword1">Contact</label>
-                                    <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Enter your password here" />
+                                    <label for="exampleInputAddress">Address</label>
+                                    <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address here" />
                                 </div>
                             </div>
                         </div>
                         {/* Address block ends here */}
+
+                        {/* Contact block start here */}
+                        <div className="row">
+                            <div className="col-sm-4">
+                                <div className="form-group">
+                                    <label for="exampleInputContact">Contact</label>
+                                    <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your password here" />
+                                </div>
+                            </div>
+                        </div>
+                        {/* Contact block ends here */}
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
