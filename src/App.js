@@ -1,6 +1,6 @@
 // Import your App.css file here in App.js
 import './App.css';
-import RouterConfig from './Components/RouterConfig';  // Import RouterConfig here
+import RouterConfig from './Components/RouterConfig';  
 
 function App() {
 

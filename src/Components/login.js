@@ -3,10 +3,9 @@ import NavigationComponent from "./Navigation";
 const LoginComponent = () => {
 
     return (
-
         <div id="LoginComponent">
 
-            <NavigationComponent/>
+            <NavigationComponent />
             <div className='container my-5 offset-sm-4'>
 
                 {/* form will start here */}
@@ -18,57 +17,43 @@ const LoginComponent = () => {
                         <div className="col-sm-4">
                             <div className="form-group">
                                 <label for="exampleInputName">Name</label>
-                                <input className="form-control" id="exampleInputName" placeholder="Enter your name" />
+                                <input className="form-control" id="exampleInputName" placeholder="Enter your name here" />
 
                             </div>
                         </div>
                     </div>
                     {/* Name block will ends here */}
 
-                    {/* Contact block will start here */}
-                    <div className='row'>
-                        <div className="col-sm-4">
-                            <div className="form-group">
-                                <label for="exampleInputContact">Contact No</label>
-                                <input className="form-control" id="exampleInputContact" placeholder="Enter your contact number" />
-                            </div>
-                        </div>
-                    </div>
-                    {/* Contact block will ends here */}
-
-                    {/* Email Address block start here */}
-                    <div className='row'>
-                        <div className="col-sm-4">
-                            <div className="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                <small id="emailHelp" className="form-text text-muted">Your email id is save , we can't share it with anyone.</small>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Email Address block ends here */}
-
                     {/* Password block start here */}
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                                <small id="passwordHelp" className="form-text text-muted">Your password is save , we can't share it with anyone.</small>
+                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Enter your password here" />
                             </div>
                         </div>
                     </div>
                     {/* Password block ends here */}
 
+                    {/* Confirm Password block start here */}
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <div className="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Enter your confirm password here" />
+                            </div>
+                        </div>
+                    </div>
+                    {/* Confirm Password block ends here  */}
 
                     {/* Submit Button block start here */}
-                    <div className='my-2'>
-                        <button type="submit" className="btn  btn-danger">Submit</button>
+                    <div className='my-2 login_css'>
+                        <button type="login" className="btn btn-danger ">Login</button>
                     </div>
                     {/* Submit Button block ends here */}
+
                 </form>
                 {/* form will ends here */}
-
 
             </div>
         </div>

@@ -6,7 +6,7 @@ const HomeComponent = () => {
         <div id="HomeComponent">
             <NavigationComponent />
             <div className="content">
-                <h1>This is HomeComponent</h1>
+              <h1>This is homeComponent</h1>
             </div>
         </div>
     )
