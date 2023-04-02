@@ -1,6 +1,15 @@
 .h2{
     color:springgreen
 }
-.login_css {
-    margin-left: 4px;
+/* Login.js loginClass */
+.loginClass {
+    width: 340px;
+}
+/* Contact.js submitClass */
+.submitClass{
+    width: 340px;
+}
+/* Navigation.js navbarClass */
+.navbarClass {
+    width: 123%;
 }

@@ -60,7 +60,7 @@ const ContactComponent = () => {
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
-                            <button type="Submit" className="btn btn-danger ">Submit</button>
+                            <button type="Submit" className="btn btn-danger submitClass">Submit</button>
                         </div>
                         {/* Submit Button block ends here */}
 

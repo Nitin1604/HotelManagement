@@ -48,7 +48,7 @@ const LoginComponent = () => {
 
                     {/* Submit Button block start here */}
                     <div className='my-2 login_css'>
-                        <button type="login" className="btn btn-danger ">Login</button>
+                        <button type="login" className="btn btn-danger loginClass">Login</button>
                     </div>
                     {/* Submit Button block ends here */}
 
