@@ -8,7 +8,7 @@ const ContactComponent = () => {
             <div className="content">
                 <div className='container my-5 offset-sm-4'>
 
-                        <h2>Customer's Contact Details</h2>
+                    <h3 className="heading_h3">Contact Details</h3>
                     {/* form will start here */}
                     <form>
 
@@ -16,32 +16,43 @@ const ContactComponent = () => {
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <label for="exampleInputName">Name</label>
-                                    <input className="form-control" id="exampleInputName" placeholder="Enter your name here" />
-
+                                    <div className="row">
+                                        <label for="exampleInputName">Name</label>
+                                        <div className="col-sm-10">
+                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         {/* Name block will ends here */}
 
                         {/* Email block will start here */}
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <label for="exampleInputName">Email</label>
-                                    <input className="form-control" id="exampleInputName" placeholder="Enter your email here" />
-
+                                    <div className="row">
+                                         <label for="exampleInputName">Email</label>
+                                          <div className="col-sm-10">
+                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email"/>
+                                          </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         {/* Email block will ends here */}
 
-                        {/* Address block start here */} 
+                        {/* Address block start here */}
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <label for="exampleInputAddress">Address</label>
-                                    <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address here" />
+                                    <div className="row">
+                                        <label for="exampleInputAddress">Address</label>
+                                        <div className="col-sm-10">
+                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address"/>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -51,8 +62,12 @@ const ContactComponent = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <label for="exampleInputContact">Contact</label>
-                                    <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your password here" />
+                                    <div className="row">
+                                        <label for="exampleInputContact">Contact</label>
+                                        <div className="col-sm-10">
+                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no."/>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
