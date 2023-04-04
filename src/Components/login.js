@@ -35,17 +35,6 @@ const LoginComponent = () => {
                     </div>
                     {/* Password block ends here */}
 
-                    {/* Confirm Password block start here */}
-                    <div className="row">
-                        <div className="col-sm-4">
-                            <div className="form-group">
-                                <label for="exampleInputPassword1">Confirm Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Enter your confirm password here" />
-                            </div>
-                        </div>
-                    </div>
-                    {/* Confirm Password block ends here  */}
-
                     {/* Submit Button block start here */}
                     <div className='my-2 login_css'>
                         <button type="login" className="btn btn-danger loginClass">Login</button>
