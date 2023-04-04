@@ -42,7 +42,7 @@ const ContactComponent = () => {
                             </div>
                         </div>
                         {/* Email block will ends here */}
-                        
+
                         {/* Contact block start here */}
                         <div className="row">
                             <div className="col-sm-4">
@@ -82,7 +82,6 @@ const ContactComponent = () => {
 
                     </form>
                     {/* form will ends here */}
-
                 </div>
             </div>
         </div>
