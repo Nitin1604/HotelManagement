@@ -10,15 +10,18 @@ const LoginComponent = () => {
 
                 {/* form will start here */}
                 <form>
-                    <h2>Customer's Login Page</h2>
+                            <h2 className="heading_h2">Login</h2>
 
                     {/* Name block will start here */}
                     <div className='row'>
                         <div className="col-sm-4">
                             <div className="form-group">
-                                <label for="exampleInputName">Name</label>
-                                <input className="form-control" id="exampleInputName" placeholder="Enter your name here" />
-
+                                <div className="row my-3">
+                                    <label for="exampleInputName">Name</label>
+                                    <div className="col-sm-10">
+                                        <input className="form-control1" id="exampleInputName" placeholder="Enter your name" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -28,8 +31,12 @@ const LoginComponent = () => {
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Enter your password here" />
+                                <div className="row">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <div className="col-sm-8">
+                                        <input type="password" className="form-control2" id="exampleInputPassword1" placeholder="Enter your password" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,7 +44,7 @@ const LoginComponent = () => {
 
                     {/* Submit Button block start here */}
                     <div className='my-2 login_css'>
-                        <button type="login" className="btn btn-danger loginClass">Login</button>
+                        <button type="login" className="btn btn-danger col-sm-3">Login</button>
                     </div>
                     {/* Submit Button block ends here */}
 
