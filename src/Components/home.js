@@ -13,7 +13,7 @@ const HomeComponent = () => {
                     <div className="row">
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
-                                {/* Insert your image src here */}
+                                {/* Image 1 is inserted here */}
                                 <img src={foodCourt1} alt="foodCourt1" />
                                 <div className="card-body">
                                     <h5 className="card-title">Burger King</h5>
