@@ -42,6 +42,21 @@ const ContactComponent = () => {
                             </div>
                         </div>
                         {/* Email block will ends here */}
+                        
+                        {/* Contact block start here */}
+                        <div className="row">
+                            <div className="col-sm-4">
+                                <div className="form-group">
+                                    <div className="row">
+                                        <label for="exampleInputContact">Contact</label>
+                                        <div className="col-sm-10">
+                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no."/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Contact block ends here */}
 
                         {/* Address block start here */}
                         <div className="row">
@@ -58,20 +73,6 @@ const ContactComponent = () => {
                         </div>
                         {/* Address block ends here */}
 
-                        {/* Contact block start here */}
-                        <div className="row">
-                            <div className="col-sm-4">
-                                <div className="form-group">
-                                    <div className="row">
-                                        <label for="exampleInputContact">Contact</label>
-                                        <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no."/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Contact block ends here */}
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
