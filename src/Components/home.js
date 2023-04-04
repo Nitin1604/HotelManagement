@@ -1,5 +1,5 @@
 import NavigationComponent from "./Navigation";
-// Import your image here 
+// Importing all images here... 
 import foodCourt1 from './foodCourt1.jpg';
 import foodCourt2 from './foodCourt2.jpg';
 import hotel1 from './hotel1.jpg';
