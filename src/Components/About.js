@@ -9,7 +9,7 @@ const AboutComponent = () => {
                 <NavigationComponent />
                 <div className="content">
                     <div className="card-group">
-                        <div className="card" style="width: 18rem;">
+                        <div className="card">
                             <img src={hotel1} alt="hotel1" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
@@ -17,7 +17,7 @@ const AboutComponent = () => {
                                 <a href="#" className="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
-                        <div className="card" style="width: 18rem;">
+                        <div className="card">
                             <img src={hotel2} alt="hotel2" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
