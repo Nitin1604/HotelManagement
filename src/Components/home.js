@@ -3,6 +3,7 @@ import NavigationComponent from "./Navigation";
 import foodCourt1 from './foodCourt1.jpg';
 import foodCourt2 from './foodCourt2.jpg';
 import hotel1 from './hotel1.jpg';
+import hotel2 from './hotel2.jpg';
 const HomeComponent = () => {
 
     return (
@@ -44,11 +45,24 @@ const HomeComponent = () => {
                                 <img src={hotel1} alt="hotel1" />
                                 <div className="card-body">
                                     <h5 className="card-title">Hotel in Noida</h5>
-                                    <p className="card-text">This hotel is located near Ducat which is in Noida Sector 16. This hotel is best for tourism to stay in this hotel. It has swimming pool on the roof of this hotel and has the facilties of gym also at one of its floor.</p>
+                                    <p className="card-text">This hotel is located near Ducat which is in Noida Sector 16. This hotel is best for tourism to stay in this hotel.</p>
                                 </div>
                             </div>
                         </div>
                         {/* card 3 block ends here */}
+
+                        {/* card 4 block start here */}
+                        <div className="col-sm-2">
+                            <div className="card mx-2 my-4">
+                                {/* Image 4 is inserted here */}
+                                <img src={hotel2} alt="hotel2"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Sandal Suites Hotels, Noida</h5>
+                                    <p className="card-text">Sandal Suites, operated by Lemon Tree Hotels, is situated just off the Noida-Greater Noida Expressway. </p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* card 4 block ends here */}
                     </div>
                 </div>
             </div>
