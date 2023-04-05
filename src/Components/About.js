@@ -1,25 +1,35 @@
 import NavigationComponent from "./Navigation";
 import hotel1 from './hotel1.jpg';
+import hotel2 from './hotel2.jpg';
 const AboutComponent = () => {
 
     return (
         <>
-        <div id="AboutComponent">
-            <NavigationComponent />
-            <div className="content">
-            <div className="row my-3">
-                <div className="col-sm-12">
-                    <div className="row">
-                        <div className="col-sm-4 mx-2">
-                        <img src={hotel1} alt="hotel1" />
-                        
+            <div id="AboutComponent">
+                <NavigationComponent />
+                <div className="content">
+                    <div className="card-group">
+                        <div className="card" style="width: 18rem;">
+                            <img src={hotel1} alt="hotel1" />
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" className="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
+                        <div className="card" style="width: 18rem;">
+                            <img src={hotel2} alt="hotel2" />
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" className="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </>
+        </>
     )
 }
 
