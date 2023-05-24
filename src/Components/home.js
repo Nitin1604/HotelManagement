@@ -55,7 +55,7 @@ const HomeComponent = () => {
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
                                 {/* Image 4 is inserted here */}
-                                <img src={hotel2} alt="hotel2"/>
+                                <img src={hotel2} alt="hotel2" />
                                 <div className="card-body">
                                     <h5 className="card-title">Sandal Suites Hotels, Noida</h5>
                                     <p className="card-text">Sandal Suites, operated by Lemon Tree Hotels, is situated just off the Noida-Greater Noida Expressway. </p>
