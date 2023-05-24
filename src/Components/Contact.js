@@ -16,8 +16,9 @@ const ContactComponent = () => {
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row">
+                                    <div className="row my-3">
                                         <label for="exampleInputName">Name</label>
+                                        <div className="ErrorMsg"></div>
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputName" placeholder="Enter your name" />
                                         </div>
@@ -32,8 +33,9 @@ const ContactComponent = () => {
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row">
+                                    <div className="row my-2">
                                          <label for="exampleInputName">Email</label>
+                                         <div className="ErrorMsg"></div>
                                           <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email"/>
                                           </div>
@@ -47,8 +49,9 @@ const ContactComponent = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row">
+                                    <div className="row my-2">
                                         <label for="exampleInputContact">Contact</label>
+                                        <div className="ErrorMsg"></div>
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no."/>
                                         </div>
@@ -62,7 +65,7 @@ const ContactComponent = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row">
+                                    <div className="row my-2">
                                         <label for="exampleInputAddress">Address</label>
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address"/>

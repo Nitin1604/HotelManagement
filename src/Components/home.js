@@ -4,6 +4,7 @@ import foodCourt1 from './foodCourt1.jpg';
 import foodCourt2 from './foodCourt2.jpg';
 import hotel1 from './hotel1.jpg';
 import hotel2 from './hotel2.jpg';
+import hotel3 from './hotel3.jpg';
 const HomeComponent = () => {
 
     return (
@@ -63,6 +64,19 @@ const HomeComponent = () => {
                             </div>
                         </div>
                         {/* card 4 block ends here */}
+
+                        {/* card 5 block start here */}
+                        <div className="col-sm-2">
+                            <div className="card mx-2 my-2">
+                                {/* Image 5 is inserted here */}
+                                <img src={hotel3} alt="hotel3" />
+                                <div className="card-bpdy">
+                                    <h5 className="card-title">Radisson Noida</h5>
+                                    <p className="card-text">Featuring a 24-hour front desk and free WiFi throughout the property, Radisson Noida also boasts an outdoor rooftop swimming pool and 3 dining options on property.</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* card 5 block ends here */}
                     </div>
                 </div>
             </div>

@@ -1,6 +1,4 @@
 import NavigationComponent from "./Navigation";
-import hotel1 from './hotel1.jpg';
-import hotel2 from './hotel2.jpg';
 const AboutComponent = () => {
 
     return (
