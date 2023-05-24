@@ -13,6 +13,7 @@ const HomeComponent = () => {
                 <NavigationComponent />
                 <div className="content">
                     {/* card 1 block start here */}
+                    {/* First row contains 5 different images and their description also */}
                     <div className="row">
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
@@ -78,6 +79,7 @@ const HomeComponent = () => {
                         </div>
                         {/* card 5 block ends here */}
                     </div>
+                    {/* First row contains 5 different images and their description also */}
                 </div>
             </div>
 
