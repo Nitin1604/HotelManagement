@@ -50,7 +50,14 @@
     margin-left: 5px;
 
 }
+/* Home.js css */
 img {
     height: 150px;
-    width:  191px;
+    width: 210px;
+}
+
+/* About.js css */
+.card-body {
+    height: 327px;
+    width: 227px;
 }
