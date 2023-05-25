@@ -1,4 +1,5 @@
 import NavigationComponent from "./Navigation";
+import hotel2 from './hotel2.jpg';
 import hotel3 from './hotel3.jpg';
 const AboutComponent = () => {
 
@@ -21,7 +22,25 @@ const AboutComponent = () => {
                                         HouseKeeping , Key card access etc.
                                         <img src={hotel3} alt="hotel3" />
                                     </p>
+                                    {/* card-text ends here */}
+                                </div>
+                                {/* card-body will ends here */}
+                            </div>
+                        </div>
+
+                        <div className="col-sm-2">
+                            <div className="card mx-2 my-2">
+                                {/* card-body will start here */}
+                                <div className="card-body1">
+                                    <h5 className="card-title">FabExpress IVY Inn Sector 35</h5>
                                     {/* card-text start here */}
+                                    <p className="card-text">This hotel provides many facilities such as Free WiFi, 
+                                    Free Parking, Room Service , Non Smoking Rooms and Fabulous breakfast.
+                                    Featuring 3-star accommodation.
+
+                                        <img src={hotel2} alt="hotel2" />
+                                    </p>
+                                    {/* card-text ends here */}
                                 </div>
                                 {/* card-body will ends here */}
                             </div>
