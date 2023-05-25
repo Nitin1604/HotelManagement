@@ -12,9 +12,9 @@ const HomeComponent = () => {
             <div id="HomeComponent">
                 <NavigationComponent />
                 <div className="content">
-                    {/* card 1 block start here */}
                     {/* First row contains 5 different images and their description also */}
                     <div className="row">
+                    {/* card 1 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
                                 {/* Image 1 is inserted here */}
