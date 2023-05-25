@@ -61,8 +61,12 @@ img {
 }
 
 /* About.js css */
-.card-body {
+.card-body1 {
     height: 327px;
     width: 195px;
+}
+.card {
+    height: 357px;
+    width: 213px;
 }
 
