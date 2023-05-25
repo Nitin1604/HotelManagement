@@ -31,10 +31,11 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
+/* login.js css : (className: heading_h2) */
 .heading_h2 {
     margin-left: 100px;
 }
-
+/* Contact.js css : (className: heading_h3) */
 .heading_h3 {
     margin-left: 100px;
 }
@@ -43,10 +44,12 @@
     margin-left: 20px;
     
 }
+/* Contact.js css : (Enter your email) */
 #exampleInputEmail {
     margin-left: 24px;
 
 }
+/* Contact.js css : (Enter your address) & (Enter your phone no.) */
 #exampleInputAddress , #exampleInputContact {
     margin-left: 5px;
 
