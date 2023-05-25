@@ -1,4 +1,5 @@
 import NavigationComponent from "./Navigation";
+// Image will only works when it was imported.
 import hotel2 from './hotel2.jpg';
 import hotel3 from './hotel3.jpg';
 const AboutComponent = () => {
