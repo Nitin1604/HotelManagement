@@ -19,3 +19,18 @@ being used for passing data from one component to another.
 
 4) But the important part here is that data with props are being passed in 
 a uni-directional flow. (one way from parent to child).
+
+Class Based Components
+These components are simple classes (made up of multiple functions that add functionality to the application).
+ All class based components are child classes for the Component class of ReactJS.
+
+ Code Example:
+ import React from "react";
+ 
+class App extends React.Component {
+  render() {
+    return <h1>Class Based Components</h1>;
+  }
+}
+ 
+export default App;
