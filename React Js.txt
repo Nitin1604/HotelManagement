@@ -6,3 +6,16 @@ component only.
 4) State is mutable, it can be changed as per the need
 5) Whenever the state object changes the component is re-rendered 
 6) To use state inside a class component "this.state" is used.
+
+What is "Props"?
+1) React is a component based library which divides the UI into little
+resusable pieces.
+
+2) In some cases, those components need to communicate (send data to each other)
+and the way to pass data between components is by using props.
+
+3) "Props" is a special keyword in React, which stands for properties and is 
+being used for passing data from one component to another. 
+
+4) But the important part here is that data with props are being passed in 
+a uni-directional flow. (one way from parent to child).
