@@ -68,3 +68,9 @@ function Comp() {
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Comp />);
+
+JSX 
+JSX(JavaScript Extension), is a React extension which allows writing JavaScript code that looks like HTML.
+In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax 
+can co-exist with JavaScript/React code.The syntax is used by preprocessors (i.e., transpilers like babel) 
+to transform HTML-like syntax into standard JavaScript objects that a JavaScript engine will parse.
