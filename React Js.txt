@@ -76,5 +76,12 @@ can co-exist with JavaScript/React code.The syntax is used by preprocessors (i.e
 to transform HTML-like syntax into standard JavaScript objects that a JavaScript engine will parse.
 
 JSX provides you to write HTML/XML-like structures (e.g., DOM-like tree structures)
- in the same file where you write JavaScript code, then preprocessor will transform these expressions
-  into actual JavaScript code. Just like XML/HTML, JSX tags have a tag name, attributes, and children.
+in the same file where you write JavaScript code, then preprocessor will transform these expressions
+into actual JavaScript code. Just like XML/HTML, JSX tags have a tag name, attributes, and children.
+
+Example
+Here, we will write JSX syntax in JSX file and see the corresponding JavaScript code which transforms by preprocessor(babel).
+
+JSX File
+
+<div>Hello JavaTpoint</div>  
