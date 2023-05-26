@@ -74,3 +74,7 @@ JSX(JavaScript Extension), is a React extension which allows writing JavaScript 
 In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax 
 can co-exist with JavaScript/React code.The syntax is used by preprocessors (i.e., transpilers like babel) 
 to transform HTML-like syntax into standard JavaScript objects that a JavaScript engine will parse.
+
+JSX provides you to write HTML/XML-like structures (e.g., DOM-like tree structures)
+ in the same file where you write JavaScript code, then preprocessor will transform these expressions
+  into actual JavaScript code. Just like XML/HTML, JSX tags have a tag name, attributes, and children.
