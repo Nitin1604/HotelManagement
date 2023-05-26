@@ -41,3 +41,30 @@ is that they have access to a state which dictates the current behavior and appe
 Functional Based Components
  These are simply JavaScript functions. We can create a functional component in React by writing a JavaScript function. 
  These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.
+
+ Different ways of calling the functional component:
+
+ 1. Calling the function by using the name of the function followed by the Parentheses.
+
+// Example of Calling the function with function name followed by Parentheses
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+function Parentheses() {
+    return (<h1>
+                We can call function using name of the 
+                function followed by Parentheses 
+            </h1>);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(Parentheses());
+
+2. Calling the function by using the functional component method.
+
+// Example of Calling the function using component call
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+function Comp() {
+    return (<h1> As usual we can call the function using component call</h1>);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Comp />);
