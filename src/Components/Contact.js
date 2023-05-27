@@ -3,7 +3,7 @@ import NavigationComponent from "./Navigation";
 
 const ContactComponent = () => {
     // useState for setting the name
-    const [InputName, setInputName] = useState('Nitin');
+    const [inputName, setInputName] = useState('Nitin');
 
     // function to handle the InputName
     function handleInputName(event) {
@@ -11,7 +11,7 @@ const ContactComponent = () => {
     }
 
     // useState for setting the email
-    const [InputEmail , setInputEmail] = useState('email@example.com');
+    const [inputEmail , setInputEmail] = useState('email@example.com');
 
     // function to handle the InputEmail
     function handleInputEmail(event) {
@@ -19,7 +19,7 @@ const ContactComponent = () => {
     }
 
     // useState for setting the contact number
-    const [InputContact , setInputContact] = useState('1234567890');
+    const [inputContact , setInputContact] = useState('1234567890');
     
     // function to handle the InputContact
     function handleInputContact(event) {
@@ -27,7 +27,7 @@ const ContactComponent = () => {
     }
     
     // useState for setting the Address
-    const [InputAddress , setInputAddress] = useState('abc address');
+    const [inputAddress , setInputAddress] = useState('abc address');
     
     // function to handle the InputContact
     function handleInputAddress(event) {
@@ -48,9 +48,10 @@ const ContactComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-3">
-                                        <label for="exampleInputName">Name</label>
+                                        <label htmlFor="exampleInputName">Name</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={InputName} onClick={handleInputName} onChange={handleInputName} />
+                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onClick={handleInputName} onChange={handleInputName} />
+                                            <div className="nameErrorMsg">Email has not been entered</div>
                                         </div>
                                     </div>
                                 </div>
@@ -64,9 +65,9 @@ const ContactComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-2">
-                                        <label for="exampleInputName">Email</label>
+                                        <label htmlFor="exampleInputName">Email</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={InputEmail} onClick={handleInputEmail} onChange={handleInputEmail}/>
+                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onClick={handleInputEmail} onChange={handleInputEmail}/>
                                           
                                         </div>
                                     </div>
@@ -80,9 +81,9 @@ const ContactComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-2">
-                                        <label for="exampleInputContact">Contact</label>
+                                        <label htmlFor="exampleInputContact">Contact</label>
                                         <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={InputContact} onClick={handleInputContact} onChange={handleInputContact} />
+                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputContact} onClick={handleInputContact} onChange={handleInputContact} />
                                         </div>
                                     </div>
                                 </div>
@@ -95,9 +96,9 @@ const ContactComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-2">
-                                        <label for="exampleInputAddress">Address</label>
+                                        <label htmlFor="exampleInputAddress">Address</label>
                                         <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={InputAddress} onClick={handleInputAddress} onChange={handleInputAddress}/>
+                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputAddress} onClick={handleInputAddress} onChange={handleInputAddress}/>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +108,7 @@ const ContactComponent = () => {
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
-                            <button type="Submit" className="btn btn-danger submitClass">Submit</button>
+                            <button type="Submit" className="btn btn-danger submitClass" >Submit</button>
                         </div>
                         {/* Submit Button block ends here */}
 

@@ -71,3 +71,7 @@ img {
     width: 213px;
 }
 
+/* Contact.js css */
+.nameErrorMsg {
+    display: none;
+}
