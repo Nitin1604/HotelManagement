@@ -1,4 +1,4 @@
-import { Router, Route, BrowserRouter, Routes } from "react-router-dom"; // This is the way that how Router can be written
+import { Router, Route, BrowserRouter, Routes } from "react-router-dom"; // This is the way that how Router can be imported
 // Import all web page component here
 import LoginComponent from "./login";
 import HomeComponent from "./home";
