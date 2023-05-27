@@ -1,7 +1,7 @@
-import NavigationComponent from "./Navigation";
+import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
 
 const LoginComponent = () => {
-
+    
     return (
         <div id="LoginComponent">
 
@@ -10,14 +10,14 @@ const LoginComponent = () => {
 
                 {/* form will start here */}
                 <form>
-                            <h2 className="heading_h2">Login</h2>
+                    <h2 className="heading_h2">Login</h2>
 
                     {/* Name block will start here */}
                     <div className='row'>
                         <div className="col-sm-4">
                             <div className="form-group">
                                 <div className="row my-3">
-                                    <label for="exampleInputName">Name</label>
+                                    <label htmlFor="exampleInputName">Name</label>
                                     <div className="col-sm-10">
                                         <input className="form-control1" id="exampleInputName" placeholder="Enter your name" />
                                     </div>
@@ -32,7 +32,7 @@ const LoginComponent = () => {
                         <div className="col-sm-4">
                             <div className="form-group">
                                 <div className="row">
-                                    <label for="exampleInputPassword1">Password</label>
+                                    <label htmlFor="exampleInputPassword1">Password</label>
                                     <div className="col-sm-8">
                                         <input type="password" className="form-control2" id="exampleInputPassword1" placeholder="Enter your password" />
                                     </div>
