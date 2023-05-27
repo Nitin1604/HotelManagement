@@ -1,4 +1,5 @@
-import { Router, Route, BrowserRouter, Routes } from "react-router-dom";
+import { Router, Route, BrowserRouter, Routes } from "react-router-dom"; // This is the way that how Router can be written
+// Import all web page component here
 import LoginComponent from "./login";
 import HomeComponent from "./home";
 import AboutComponent from "./About";
@@ -11,6 +12,8 @@ const RouterConfig = () => {
 
     return (
         <div id="RouterConfig">
+            {/* This is the way in which router can be written with component as <BrowserRouter> , <Routes> and lastly
+            <Route> and corresponding closing all the components as </BrowserRouter> , </Routes> and </Routes> */}
             <BrowserRouter>
                 <Routes>
                     <Route exact path='/' element={< LoginComponent />} />
