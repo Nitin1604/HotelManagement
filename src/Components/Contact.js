@@ -1,7 +1,38 @@
+import { useState } from "react";
 import NavigationComponent from "./Navigation";
 
 const ContactComponent = () => {
+    // useState for setting the name
+    const [InputName, setInputName] = useState('Nitin');
 
+    // function to handle the InputName
+    function handleInputName(event) {
+        setInputName(event.target.value);
+    }
+
+    // useState for setting the email
+    const [InputEmail , setInputEmail] = useState('email@example.com');
+
+    // function to handle the InputEmail
+    function handleInputEmail(event) {
+        setInputEmail(event.target.value);
+    }
+
+    // useState for setting the contact number
+    const [InputContact , setInputContact] = useState('1234567890');
+    
+    // function to handle the InputContact
+    function handleInputContact(event) {
+        setInputContact(event.target.value);
+    }
+    
+    // useState for setting the Address
+    const [InputAddress , setInputAddress] = useState('abc address');
+    
+    // function to handle the InputContact
+    function handleInputAddress(event) {
+        setInputAddress(event.target.value);
+    }
     return (
         <div id="ContactComponent">
             <NavigationComponent />
@@ -19,7 +50,7 @@ const ContactComponent = () => {
                                     <div className="row my-3">
                                         <label for="exampleInputName">Name</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" />
+                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={InputName} onClick={handleInputName} onChange={handleInputName} />
                                         </div>
                                     </div>
                                 </div>
@@ -33,10 +64,11 @@ const ContactComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-2">
-                                         <label for="exampleInputName">Email</label>
-                                          <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email"/>
-                                          </div>
+                                        <label for="exampleInputName">Email</label>
+                                        <div className="col-sm-10">
+                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={InputEmail} onClick={handleInputEmail} onChange={handleInputEmail}/>
+                                          
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +82,7 @@ const ContactComponent = () => {
                                     <div className="row my-2">
                                         <label for="exampleInputContact">Contact</label>
                                         <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no."/>
+                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={InputContact} onClick={handleInputContact} onChange={handleInputContact} />
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +97,7 @@ const ContactComponent = () => {
                                     <div className="row my-2">
                                         <label for="exampleInputAddress">Address</label>
                                         <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address"/>
+                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={InputAddress} onClick={handleInputAddress} onChange={handleInputAddress}/>
                                         </div>
                                     </div>
                                 </div>
