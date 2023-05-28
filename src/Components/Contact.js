@@ -2,8 +2,11 @@ import { useState } from "react";
 import NavigationComponent from "./Navigation";
 
     const ContactComponent = () => {
+
+        const [validationError, setValidationError] = useState('');
+        
         // useState for setting the name
-        const [inputName, setInputName] = useState('Nitin');
+        const [inputName, setInputName] = useState('');
     
         // function to handle the InputName
         function handleInputName(event) {
@@ -11,7 +14,7 @@ import NavigationComponent from "./Navigation";
         }
     
         // useState for setting the email
-        const [inputEmail , setInputEmail] = useState('email@example.com');
+        const [inputEmail , setInputEmail] = useState('');
     
         // function to handle the InputEmail
         function handleInputEmail(event) {
@@ -19,7 +22,7 @@ import NavigationComponent from "./Navigation";
         }
     
         // useState for setting the contact number
-        const [inputContact , setInputContact] = useState('1234567890');
+        const [inputContact , setInputContact] = useState('');
         
         // function to handle the InputContact
         function handleInputContact(event) {
@@ -27,12 +30,34 @@ import NavigationComponent from "./Navigation";
         }
         
         // useState for setting the Address
-        const [inputAddress , setInputAddress] = useState('abc address');
+        const [inputAddress , setInputAddress] = useState('');
         
         // function to handle the InputContact
         function handleInputAddress(event) {
             setInputAddress(event.target.value);
         }
+
+        const setErrorMessage = (errorMessage) => {
+            setValidationError(errorMessage)
+            return false;
+        }
+
+        const handleValidation = (event) => {
+            event.preventDefault();
+            if(inputName ==='') {
+                return setErrorMessage('Name cannot be empty');
+            } else if(inputEmail ==='') {
+                return setErrorMessage('Email cannot be empty');
+            } else if(inputAddress ==='') {
+                return setErrorMessage('Addres cannot be empty');
+            } else if(inputContact ==='') {
+                return setErrorMessage('Contact cannot be empty');
+            } else {
+                setValidationError('')
+            }
+            return true
+        }
+
         return (
             <div id="ContactComponent">
                 <NavigationComponent />
@@ -41,7 +66,7 @@ import NavigationComponent from "./Navigation";
     
                         <h3 className="heading_h3">Contact Details</h3>
                         {/* form will start here */}
-                        <form>
+                        <form onSubmit={handleValidation}>
     
                             {/* Name block will start here */}
                             <div className='row'>
@@ -50,8 +75,7 @@ import NavigationComponent from "./Navigation";
                                         <div className="row my-3">
                                             <label htmlFor="exampleInputName">Name</label>
                                             <div className="col-sm-10">
-                                                <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onClick={handleInputName} onChange={handleInputName} />
-                                                <div className="nameErrorMsg" nameError = {{}}>Email has not been entered</div>
+                                                <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName}  />
                                             </div>
                                         </div>
                                     </div>
@@ -67,7 +91,7 @@ import NavigationComponent from "./Navigation";
                                         <div className="row my-2">
                                             <label htmlFor="exampleInputName">Email</label>
                                             <div className="col-sm-10">
-                                                <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onClick={handleInputEmail} onChange={handleInputEmail}/>
+                                                <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail}/>
                                               
                                             </div>
                                         </div>
@@ -83,7 +107,7 @@ import NavigationComponent from "./Navigation";
                                         <div className="row my-2">
                                             <label htmlFor="exampleInputContact">Contact</label>
                                             <div className="col-sm-10">
-                                                <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputContact} onClick={handleInputContact} onChange={handleInputContact} />
+                                                <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputContact} onChange={handleInputContact} />
                                             </div>
                                         </div>
                                     </div>
@@ -98,10 +122,15 @@ import NavigationComponent from "./Navigation";
                                         <div className="row my-2">
                                             <label htmlFor="exampleInputAddress">Address</label>
                                             <div className="col-sm-10">
-                                                <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputAddress} onClick={handleInputAddress} onChange={handleInputAddress}/>
+                                                <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputAddress} onChange={handleInputAddress}/>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div className="row" hidden={validationError === ''}>
+                                <div className="col-sm-4">
+                                    <div className="row my-2 tx-red"><div className="col-sm-12 tx-center">{validationError}</div></div>
                                 </div>
                             </div>
                             {/* Address block ends here */}
