@@ -4,6 +4,12 @@
 /* Contact.js submitClass */
 .submitClass{
     width: 340px;
+    background-color: #dc3545;
+    border: solid;
+    border-radius: 6px;
+    border-color: #dc3545;
+    color: white;
+    height: 43px;
 }
 /* Navigation.js navbarClass */
 .navbarClass {
