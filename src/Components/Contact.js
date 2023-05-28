@@ -48,10 +48,10 @@ import NavigationComponent from "./Navigation";
                 return setErrorMessage('Name cannot be empty');
             } else if(inputEmail ==='') {
                 return setErrorMessage('Email cannot be empty');
-            } else if(inputAddress ==='') {
-                return setErrorMessage('Addres cannot be empty');
             } else if(inputContact ==='') {
                 return setErrorMessage('Contact cannot be empty');
+            } else if(inputAddress ==='') {
+                return setErrorMessage('Addres cannot be empty');
             } else {
                 setValidationError('')
             }
