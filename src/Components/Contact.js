@@ -130,7 +130,7 @@ const ContactComponent = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                         {/* Validation Block start here */}
                         <div className="row" hidden={validationError === ''}>
                             <div className="col-sm-4">
@@ -139,7 +139,7 @@ const ContactComponent = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Validation Block start here */}
+                        {/* Validation Block ends here */}
 
                         {/* Address block ends here */}
 
