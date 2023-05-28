@@ -37,11 +37,13 @@ import NavigationComponent from "./Navigation";
             setInputAddress(event.target.value);
         }
 
+        // function for handle the setErrorMessage
         const setErrorMessage = (errorMessage) => {
             setValidationError(errorMessage)
             return false;
         }
 
+        // function to handle validation
         const handleValidation = (event) => {
             event.preventDefault();
             if(inputName ==='') {
