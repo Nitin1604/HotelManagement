@@ -48,13 +48,13 @@ const ContactComponent = () => {
         event.preventDefault();
         if (inputName === '') {
             return setErrorMessage("Name can't be empty");
-        } 
+        }
         else if (inputEmail === '') {
             return setErrorMessage("Email can't be empty");
         } else if (inputContact === '') {
             return setErrorMessage("Contact can't be empty");
         } else if (inputAddress === '') {
-            return setErrorMessage("Address can't be empty");
+            return setErrorMessage("Addres can't be empty");
         } else {
             setValidationError('')
         }
@@ -79,6 +79,15 @@ const ContactComponent = () => {
                                         <label htmlFor="exampleInputName">Name</label>
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName} />
+                                            {/* Validation Block start here */}
+                                            <div className="row" hidden={validationError === ''}>
+                                                <div className="col-sm-4">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Validation Block ends here */}
                                         </div>
                                     </div>
                                 </div>
@@ -103,8 +112,6 @@ const ContactComponent = () => {
                         </div>
                         {/* Email block will ends here */}
 
-                        
-
                         {/* Contact block start here */}
                         <div className="row">
                             <div className="col-sm-4">
@@ -120,14 +127,6 @@ const ContactComponent = () => {
                         </div>
                         {/* Contact block ends here */}
 
-                        <div className="row" hidden={validationError === ''}>
-                            <div className="col-sm-4">
-                                <div className="row my-2 tx-red">
-                                    <div className="col-sm-12 tx-center">{validationError}</div>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Address block start here */}
                         <div className="row">
                             <div className="col-sm-4">
@@ -142,15 +141,7 @@ const ContactComponent = () => {
                             </div>
                         </div>
 
-                        {/* Validation Block start here */}
-                        <div className="row" hidden={validationError === ''}>
-                            <div className="col-sm-4">
-                                <div className="row my-2 tx-red">
-                                    <div className="col-sm-12 tx-center">{validationError}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Validation Block ends here */}
+
 
                         {/* Address block ends here */}
 
