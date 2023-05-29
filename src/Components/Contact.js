@@ -48,7 +48,8 @@ const ContactComponent = () => {
         event.preventDefault();
         if (inputName === '') {
             return setErrorMessage("Name can't be empty");
-        } else if (inputEmail === '') {
+        } 
+        else if (inputEmail === '') {
             return setErrorMessage("Email can't be empty");
         } else if (inputContact === '') {
             return setErrorMessage("Contact can't be empty");
