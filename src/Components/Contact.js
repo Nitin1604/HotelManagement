@@ -49,13 +49,7 @@ const ContactComponent = () => {
         if (inputName === '') {
             return setErrorMessage("Name can't be empty");
         }
-        else if (inputEmail === '') {
-            return setErrorMessage("Email can't be empty");
-        } else if (inputContact === '') {
-            return setErrorMessage("Contact can't be empty");
-        } else if (inputAddress === '') {
-            return setErrorMessage("Addres can't be empty");
-        } else {
+         else {
             setValidationError('')
         }
         return true
