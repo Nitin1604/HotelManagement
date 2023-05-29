@@ -54,7 +54,7 @@ const ContactComponent = () => {
         } else if (inputContact === '') {
             return setErrorMessage("Contact can't be empty");
         } else if (inputAddress === '') {
-            return setErrorMessage("Addres can't be empty");
+            return setErrorMessage("Address can't be empty");
         } else {
             setValidationError('')
         }
@@ -103,6 +103,8 @@ const ContactComponent = () => {
                         </div>
                         {/* Email block will ends here */}
 
+                        
+
                         {/* Contact block start here */}
                         <div className="row">
                             <div className="col-sm-4">
@@ -117,6 +119,14 @@ const ContactComponent = () => {
                             </div>
                         </div>
                         {/* Contact block ends here */}
+
+                        <div className="row" hidden={validationError === ''}>
+                            <div className="col-sm-4">
+                                <div className="row my-2 tx-red">
+                                    <div className="col-sm-12 tx-center">{validationError}</div>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* Address block start here */}
                         <div className="row">
