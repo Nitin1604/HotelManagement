@@ -85,3 +85,17 @@ Here, we will write JSX syntax in JSX file and see the corresponding JavaScript 
 JSX File
 
 <div>Hello JavaTpoint</div>  
+
+let isValidEmail = /@gmail.com$/;
+let str = "n*tin means codewith"; 
+
+let result = isValidEmail.exec(str);
+console.log("The result from exec is ", result);
+
+if(isValidEmail.test(str)){
+    console.log(`The string ${str} matches the expression ${isValidEmail.source}`);
+}
+else{
+    console.log(`The string ${str} does not match the expression ${isValidEmail.source}`);
+}
+

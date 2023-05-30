@@ -51,23 +51,22 @@ const ContactComponent = () => {
             console.log("Name slot is empty")
             return setErrorMessage("Name is left blank");
         }
-        if (inputEmail === ''){
+        if (inputEmail === '') {
             console.log("Email slot is empty")
             return setErrorMessage("Email is left blank");
         }
-        if (inputContact === ''){
+        if (inputContact === '') {
             console.log("Contact slot is empty")
             return setErrorMessage("Contact is left blank");
         }
-        if (inputAddress === ''){
+        if (inputAddress === '') {
             console.log("Address slot is empty")
             return setErrorMessage("Address is left blank");
         }
         else {
-           setValidationError('')
-       }
-   }
-
+            setValidationError('')
+        }
+    }
 
     return (
         <div id="ContactComponent">
