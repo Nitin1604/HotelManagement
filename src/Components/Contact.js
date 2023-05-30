@@ -42,7 +42,6 @@ const ContactComponent = () => {
         setValidationError(errorMessage)
         return false;
     }
-
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault();
