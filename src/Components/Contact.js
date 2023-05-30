@@ -46,14 +46,28 @@ const ContactComponent = () => {
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault();
+        // when inputName were left blank
         if (inputName === '') {
-            return setErrorMessage("Name can't be empty");
+            console.log("Name slot is empty")
+            return setErrorMessage("Name is left blank");
         }
-         else {
-            setValidationError('')
+        if (inputEmail === ''){
+            console.log("Email slot is empty")
+            return setErrorMessage("Email is left blank");
         }
-        return true
-    }
+        if (inputContact === ''){
+            console.log("Contact slot is empty")
+            return setErrorMessage("Contact is left blank");
+        }
+        if (inputAddress === ''){
+            console.log("Address slot is empty")
+            return setErrorMessage("Address is left blank");
+        }
+        else {
+           setValidationError('')
+       }
+   }
+
 
     return (
         <div id="ContactComponent">
@@ -98,7 +112,15 @@ const ContactComponent = () => {
                                         <label htmlFor="exampleInputName">Email</label>
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
-
+                                            {/* Validation Block start here */}
+                                            <div className="row" hidden={validationError === ''}>
+                                                <div className="col-sm-4">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Validation Block ends here */}
                                         </div>
                                     </div>
                                 </div>
@@ -114,6 +136,15 @@ const ContactComponent = () => {
                                         <label htmlFor="exampleInputContact">Contact</label>
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputContact} onChange={handleInputContact} />
+                                            {/* Validation Block start here */}
+                                            <div className="row" hidden={validationError === ''}>
+                                                <div className="col-sm-4">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Validation Block ends here */}
                                         </div>
                                     </div>
                                 </div>
@@ -129,6 +160,15 @@ const ContactComponent = () => {
                                         <label htmlFor="exampleInputAddress">Address</label>
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputAddress} onChange={handleInputAddress} />
+                                            {/* Validation Block start here */}
+                                            <div className="row" hidden={validationError === ''}>
+                                                <div className="col-sm-4">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Validation Block ends here */}
                                         </div>
                                     </div>
                                 </div>
