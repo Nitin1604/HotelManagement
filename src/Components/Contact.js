@@ -90,22 +90,23 @@ const ContactComponent = () => {
                                     <div className="row my-3">
                                         <label htmlFor="exampleInputName">Name</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName} />
+                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName}/>
+
                                             {/* Validation Block start here */}
                                             <div className="row" hidden={validationError === ''}>
-                                                <div className="col-sm-4">
+                                                <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
                                                         <div className="col-sm-12 tx-center">{validationError}</div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* Validation Block ends here */}
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         {/* Name block will ends here */}
 
                         {/* Email block will start here */}
@@ -117,10 +118,10 @@ const ContactComponent = () => {
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError === ''}>
-                                                <div className="col-sm-4">
+                                            <div className="row">
+                                                <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                        <div className="col-sm-12 tx-center">{}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,10 +142,10 @@ const ContactComponent = () => {
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputContact} onChange={handleInputContact} />
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError === ''}>
-                                                <div className="col-sm-4">
+                                            <div className="row">
+                                                <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                        <div className="col-sm-12 tx-center">{}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,10 +166,10 @@ const ContactComponent = () => {
                                         <div className="col-sm-10">
                                             <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputAddress} onChange={handleInputAddress} />
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError === ''}>
-                                                <div className="col-sm-4">
+                                            <div className="row">
+                                                <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                        <div className="col-sm-12 tx-center">{}</div>
                                                     </div>
                                                 </div>
                                             </div>
