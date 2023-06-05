@@ -74,10 +74,11 @@ img {
     height: 357px;
     width: 213px;
 }
-
+/* .tx-red used in all components */
 .tx-red{
     color: red;
 }
+/* .tx-center used in all components */
 .tx-center {
     text-align: center;
 }
