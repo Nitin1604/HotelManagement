@@ -78,7 +78,7 @@ const LoginComponent = () => {
                                         <div className="row" hidden={validationNameError === ''}>
                                             <div className="col-sm-12">
                                                 <div className="row my-2 tx-red">
-                                                    <div className="col-sm-12 tx-center">{validationNameError}</div>
+                                                    <div className="col-sm-10 tx-center">{validationNameError}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@ const LoginComponent = () => {
                                         <div className="row" hidden={validationPasswordError === ''}>
                                             <div className="col-sm-12">
                                                 <div className="row my-2 tx-red">
-                                                    <div className="col-sm-12 tx-center">{validationPasswordError}</div>
+                                                    <div className="col-sm-10 tx-center">{validationPasswordError}</div>
                                                 </div>
                                             </div>
                                         </div>
