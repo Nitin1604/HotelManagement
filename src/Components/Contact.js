@@ -4,11 +4,9 @@ import NavigationComponent from "./Navigation";
 const ContactComponent = () => {
 
     const [validationError1, setvalidationError1] = useState('');
-    // Another function for useState('')
     const [validationError2, setValidationError2] = useState('');
     const [validationError3, setValidationError3] = useState('');
     const [validationError4, setValidationError4] = useState('');
-    // Another function for useState('')
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
