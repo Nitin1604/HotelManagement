@@ -1,7 +1,60 @@
+import { useState } from "react"; // Import useState hook here
 import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
 
 const LoginComponent = () => {
-    
+
+    const [validationNameError, setvalidationNameError] = useState('');
+    const [validationPasswordError, setvalidationPasswordError] = useState('');
+
+    // useState for setting the name
+    const [inputName, setInputName] = useState('');
+
+    // function to handle the InputName
+    function handleInputName(event) {
+        setInputName(event.target.value);
+    }
+
+
+    // useState for setting the name
+    const [inputPassword, setinputPassword] = useState('');
+
+    // function to handle the InputName
+    function handleInputPassword(event) {
+        setinputPassword(event.target.value);
+    }
+
+    // function to handle error Message
+    const setNameErrorMessage = (errorNameMessage) => {
+        setvalidationNameError(errorNameMessage)
+        return false;
+    }
+
+    const setPasswordErrorMessage = (errorPasswordMessage) => {
+        setvalidationPasswordError(errorPasswordMessage)
+        return false;
+    }
+
+      // function to handle validation
+      const handleValidation = (event) => {
+        event.preventDefault();
+        // when inputName were left blank
+        if (inputName === '') {
+            console.log("Name slot is empty")
+            return setNameErrorMessage("Name is left blank");
+        }
+        else {
+            setvalidationNameError('')
+        }
+
+        // When inputPassword were left blank
+        if (inputPassword === '') {
+            console.log("Password slot is empty")
+            return setPasswordErrorMessage("Password is left blank");
+        }
+        else {
+            setvalidationPasswordError('')
+        }
+    }
     return (
         <div id="LoginComponent">
 
@@ -9,7 +62,7 @@ const LoginComponent = () => {
             <div className='container my-5 offset-sm-4'>
 
                 {/* form will start here */}
-                <form>
+                <form onSubmit={handleValidation}>
                     <h2 className="heading_h2">Login</h2>
 
                     {/* Name block will start here */}
@@ -19,7 +72,18 @@ const LoginComponent = () => {
                                 <div className="row my-3">
                                     <label htmlFor="exampleInputName">Name</label>
                                     <div className="col-sm-10">
-                                        <input className="form-control1" id="exampleInputName" placeholder="Enter your name" />
+                                        <input className="form-control1" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName} />
+
+                                        {/* Validation Block will start here */}
+                                        <div className="row" hidden={validationNameError === ''}>
+                                            <div className="col-sm-12">
+                                                <div className="row my-2 tx-red">
+                                                    <div className="col-sm-12 tx-center">{validationNameError}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* Validation Block will ends here */}
+
                                     </div>
                                 </div>
                             </div>
@@ -34,7 +98,18 @@ const LoginComponent = () => {
                                 <div className="row">
                                     <label htmlFor="exampleInputPassword1">Password</label>
                                     <div className="col-sm-8">
-                                        <input type="password" className="form-control2" id="exampleInputPassword1" placeholder="Enter your password" />
+                                        <input type="password" className="form-control2" id="exampleInputPassword1" placeholder="Enter your password" value={inputPassword} onChange={handleInputPassword} />
+
+                                        {/* Validation Block will start here */}
+                                        <div className="row" hidden={validationPasswordError === ''}>
+                                            <div className="col-sm-12">
+                                                <div className="row my-2 tx-red">
+                                                    <div className="col-sm-12 tx-center">{validationPasswordError}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* Validation BLock will ends here */}
+
                                     </div>
                                 </div>
                             </div>
@@ -55,6 +130,6 @@ const LoginComponent = () => {
         </div>
 
     );
-}
+    }
 
 export default LoginComponent;
