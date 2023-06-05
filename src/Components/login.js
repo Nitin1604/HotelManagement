@@ -40,7 +40,7 @@ const LoginComponent = () => {
         // when inputName were left blank
         if (inputName === '') {
             console.log("Name slot is empty")
-            return setNameErrorMessage("Name is left blank");
+            return setNameErrorMessage("Name field is empty");
         }
         else {
             setvalidationNameError('')
@@ -49,7 +49,7 @@ const LoginComponent = () => {
         // When inputPassword were left blank
         if (inputPassword === '') {
             console.log("Password slot is empty")
-            return setPasswordErrorMessage("Password is left blank");
+            return setPasswordErrorMessage("Password field is empty");
         }
         else {
             setvalidationPasswordError('')

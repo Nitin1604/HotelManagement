@@ -3,10 +3,10 @@ import NavigationComponent from "./Navigation"; // Importing Navigation bar in l
 
 const ContactComponent = () => {
 
-    const [validationError1, setvalidationError1] = useState('');
-    const [validationError2, setValidationError2] = useState('');
-    const [validationError3, setValidationError3] = useState('');
-    const [validationError4, setValidationError4] = useState('');
+    const [validationError1, setvalidationNameError] = useState('');
+    const [validationError2, setvalidationEmailError] = useState('');
+    const [validationError3, setvalidationContactError] = useState('');
+    const [validationError4, setvalidationAddressError] = useState('');
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -41,20 +41,20 @@ const ContactComponent = () => {
     }
 
     // function for handle the setErrorMessage
-    const setErrorMessage1 = (errorMessage) => {
-        setvalidationError1(errorMessage)
+    const setNameErrorMessage = (errorNameMessage) => {
+        setvalidationNameError(errorNameMessage)
         return false;
     }
-    const setErrorMessage2 = (errorMessage2) => {
-        setValidationError2(errorMessage2)
+    const setEmailErrorMessage = (errorEmailMessage) => {
+        setvalidationEmailError(errorEmailMessage)
         return false;
     }
-    const setErrorMessage3 = (errorMessage3) => {
-        setValidationError3(errorMessage3)
+    const setContactErrorMessage = (errorContactMessage) => {
+        setvalidationContactError(errorContactMessage)
         return false;
     }
-    const setErrorMessage4 = (errorMessage4) => {
-        setValidationError4(errorMessage4)
+    const setAddressErrorMessage = (errorAddressMessage) => {
+        setvalidationAddressError(errorAddressMessage)
         return false;
     }
     // function to handle validation
@@ -63,37 +63,37 @@ const ContactComponent = () => {
         // when inputName were left blank
         if (inputName === '') {
             console.log("Name slot is empty")
-            return setErrorMessage1("Name is left blank");
+            return setNameErrorMessage("Name is left blank");
         }
         else {
-            setvalidationError1('')
+            setvalidationNameError('')
         }
     
       // When inputEmail were left blank
       if (inputEmail === '') {
           console.log("Email slot is empty")
-          return setErrorMessage2("Email is left blank");
+          return setEmailErrorMessage("Email is left blank");
         }
         else {
-            setValidationError2('')
+            setvalidationEmailError('')
         }
        
         // When inputContact were left blank
         if (inputContact === '') {
             console.log("Contact slot is empty")
-            return setErrorMessage3("Contact is left blank");
+            return setContactErrorMessage("Contact is left blank");
         }
         else {
-            setValidationError3('')
+            setvalidationContactError('')
         }
        
         // When inputAddress were left blank
         if (inputAddress === '') {
             console.log("Address slot is empty")
-            return setErrorMessage4("Address is left blank");
+            return setAddressErrorMessage("Address is left blank");
         }
         else {
-            setValidationError4('')
+            setvalidationAddressError('')
         }
     }
 
