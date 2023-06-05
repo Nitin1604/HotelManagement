@@ -86,3 +86,4 @@ JSX File
 
 <div>Hello JavaTpoint</div>  
 
+For Status Code vist this link => https://www.tutorialspoint.com/http/http_status_codes.htm#:~:text=The%20Status%2DCode%20element%20in,not%20have%20any%20categorization%20role.
