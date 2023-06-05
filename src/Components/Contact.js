@@ -3,7 +3,12 @@ import NavigationComponent from "./Navigation";
 
 const ContactComponent = () => {
 
-    const [validationError, setValidationError] = useState('');
+    const [validationError1, setvalidationError1] = useState('');
+    // Another function for useState('')
+    const [validationError2, setValidationError2] = useState('');
+    const [validationError3, setValidationError3] = useState('');
+    const [validationError4, setValidationError4] = useState('');
+    // Another function for useState('')
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -38,8 +43,20 @@ const ContactComponent = () => {
     }
 
     // function for handle the setErrorMessage
-    const setErrorMessage = (errorMessage) => {
-        setValidationError(errorMessage)
+    const setErrorMessage1 = (errorMessage) => {
+        setvalidationError1(errorMessage)
+        return false;
+    }
+    const setErrorMessage2 = (errorMessage2) => {
+        setValidationError2(errorMessage2)
+        return false;
+    }
+    const setErrorMessage3 = (errorMessage3) => {
+        setValidationError3(errorMessage3)
+        return false;
+    }
+    const setErrorMessage4 = (errorMessage4) => {
+        setValidationError4(errorMessage4)
         return false;
     }
     // function to handle validation
@@ -48,28 +65,37 @@ const ContactComponent = () => {
         // when inputName were left blank
         if (inputName === '') {
             console.log("Name slot is empty")
-            return setErrorMessage("Name is left blank");
+            return setErrorMessage1("Name is left blank");
         }
-
-        // When inputEmail were left blank
-        if (inputEmail === '') {
-            console.log("Email slot is empty")
-            return setErrorMessage("Email is left blank");
+        else {
+            setvalidationError1('')
         }
-
+    
+      // When inputEmail were left blank
+      if (inputEmail === '') {
+          console.log("Email slot is empty")
+          return setErrorMessage2("Email is left blank");
+        }
+        else {
+            setValidationError2('')
+        }
+       
         // When inputContact were left blank
         if (inputContact === '') {
             console.log("Contact slot is empty")
-            return setErrorMessage("Contact is left blank");
+            return setErrorMessage3("Contact is left blank");
         }
-
+        else {
+            setValidationError3('')
+        }
+       
         // When inputAddress were left blank
         if (inputAddress === '') {
             console.log("Address slot is empty")
-            return setErrorMessage("Address is left blank");
+            return setErrorMessage4("Address is left blank");
         }
         else {
-            setValidationError('')
+            setValidationError4('')
         }
     }
 
@@ -90,13 +116,13 @@ const ContactComponent = () => {
                                     <div className="row my-3">
                                         <label htmlFor="exampleInputName">Name</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName}/>
+                                            <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName} />
 
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError === ''}>
+                                            <div className="row" hidden={validationError1 === ''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError}</div>
+                                                        <div className="col-sm-12 tx-center">{validationError1}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,10 +144,10 @@ const ContactComponent = () => {
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
                                             {/* Validation Block start here */}
-                                            <div className="row">
+                                            <div className="row" hidden={validationError2 ===''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{}</div>
+                                                        <div className="col-sm-12 tx-center">{validationError2}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,7 +171,7 @@ const ContactComponent = () => {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{}</div>
+                                                        <div className="col-sm-12 tx-center">{validationError3}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -169,7 +195,7 @@ const ContactComponent = () => {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{}</div>
+                                                        <div className="col-sm-12 tx-center">{validationError4}</div>
                                                     </div>
                                                 </div>
                                             </div>
