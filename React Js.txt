@@ -92,3 +92,11 @@ Hooks in React JS
 
 Ques) What is the Hooks in React JS?
 Ans) A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. 
+
+Ques) What is Redux?
+Ans ) Redux can be defined in following points
+1) A container where you can store your whole aaplication data.
+
+2) So we call it to state management
+
+3) It doesn't belong to the component state.
