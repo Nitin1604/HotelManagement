@@ -108,15 +108,30 @@ Although states have largely replaced classes in React, there is no plan of remo
 
 Things you need to keep in mind while using hooks:
 
-You must import hook first
-You must import it from react
-Hooks can only be called in React Function Components, meaning:
+(1) You must import hook first.
+(2) You must import it from react.
+(3) Hooks can only be called in React Function Components, meaning:
 
 Code Example:
 // import statements
 // Can't call here
 const Blogs = () => {
     // Can call here
+    return <h1>Blogs</h1>;
+};
+
+export default Blogs;
+
+(4) Hooks cannot be conditional
+(5) Hooks cannot work in React Class Components
+(6) Hooks can only be called at the top level of a component, meaning it can't be called from inside a block, i.e. {}. So, can't be called inside if, loops or any block, example:
+
+Code Example:
+const Blogs = () => {
+    // Can call here
+    if (true){
+        // Can't call here
+    }
     return <h1>Blogs</h1>;
 };
 
