@@ -100,3 +100,24 @@ Ans ) Redux can be defined in following points
 2) So we call it to state management
 
 3) It doesn't belong to the component state.
+
+More About Hooks in React JS
+Hooks were added to React in version 16.8. Hooks let you use state and other React features without writing a class.
+
+Although states have largely replaced classes in React, there is no plan of removing classes from React. 
+
+Things you need to keep in mind while using hooks:
+
+You must import hook first
+You must import it from react
+Hooks can only be called in React Function Components, meaning:
+
+Code Example:
+// import statements
+// Can't call here
+const Blogs = () => {
+    // Can call here
+    return <h1>Blogs</h1>;
+};
+
+export default Blogs;
