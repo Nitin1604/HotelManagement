@@ -23,12 +23,13 @@ const LoginComponent = () => {
         setinputPassword(event.target.value);
     }
 
-    // function to handle error Message
+    // function to handle setNameErrorMessage
     const setNameErrorMessage = (errorNameMessage) => {
         setvalidationNameError(errorNameMessage)
         return false;
     }
 
+    // function to handle setPasswordErrorMessage
     const setPasswordErrorMessage = (errorPasswordMessage) => {
         setvalidationPasswordError(errorPasswordMessage)
         return false;

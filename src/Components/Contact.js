@@ -40,19 +40,23 @@ const ContactComponent = () => {
         setInputAddress(event.target.value);
     }
 
-    // function for handle the setErrorMessage
+    // function to handle the setErrorMessage
     const setNameErrorMessage = (errorNameMessage) => {
         setvalidationNameError(errorNameMessage)
         return false;
     }
+
+    // function to handle setEmailErrorMessage
     const setEmailErrorMessage = (errorEmailMessage) => {
         setvalidationEmailError(errorEmailMessage)
         return false;
     }
+    // function to handle setEmailContactMessage
     const setContactErrorMessage = (errorContactMessage) => {
         setvalidationContactError(errorContactMessage)
         return false;
     }
+    // function to handle setEmailAddressMessage
     const setAddressErrorMessage = (errorAddressMessage) => {
         setvalidationAddressError(errorAddressMessage)
         return false;
