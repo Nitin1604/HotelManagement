@@ -2,11 +2,12 @@ import { useState } from "react"; // Import useState hook here
 import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
 
 const ContactComponent = () => {
-
-    const [validationError1, setvalidationNameError] = useState('');
-    const [validationError2, setvalidationEmailError] = useState('');
-    const [validationError3, setvalidationContactError] = useState('');
-    const [validationError4, setvalidationAddressError] = useState('');
+    
+    // useState for all four validationError : validationNameError , validationEmailError , validationContactError , vaildationAddressError
+    const [validationNameError, setvalidationNameError] = useState('');
+    const [validationEmailError, setvalidationEmailError] = useState('');
+    const [validationContactError, setvalidationContactError] = useState('');
+    const [validationAddressError, setvalidationAddressError] = useState('');
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -121,10 +122,10 @@ const ContactComponent = () => {
                                             <input className="form-control" id="exampleInputName" placeholder="Enter your name" value={inputName} onChange={handleInputName} />
 
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError1 === ''}>
+                                            <div className="row" hidden={validationNameError === ''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError1}</div>
+                                                        <div className="col-sm-12 tx-center">{validationNameError}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,10 +147,10 @@ const ContactComponent = () => {
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationError2 ===''}>
+                                            <div className="row" hidden={validationEmailError ===''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError2}</div>
+                                                        <div className="col-sm-12 tx-center">{validationEmailError}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -173,7 +174,7 @@ const ContactComponent = () => {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError3}</div>
+                                                        <div className="col-sm-12 tx-center">{validationContactError}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -197,7 +198,7 @@ const ContactComponent = () => {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validationError4}</div>
+                                                        <div className="col-sm-12 tx-center">{validationAddressError}</div>
                                                     </div>
                                                 </div>
                                             </div>
