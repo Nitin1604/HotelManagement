@@ -2,7 +2,7 @@
 
 In this project i have using react js to make this project. This project has four web pages these are as follows:-
 
-1) login.js when clicking on Hotel Managemenet
+1) login.js when clicking on Hotel Management
 2) Home.js
 3) About.js
 4) Contact.js
