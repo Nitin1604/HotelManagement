@@ -4,7 +4,6 @@ import LoginComponent from "./login";
 import HomeComponent from "./home";
 import AboutComponent from "./About";
 import ContactComponent from "./Contact";
-
 import React from 'react';
 import RegisterComponent from "./Register";
 
