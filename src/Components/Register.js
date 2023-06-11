@@ -56,15 +56,17 @@ const RegisterComponent = () => {
         return false;
     }
     // function to handle setEmailContactMessage
-    const setPasswordErrorMessage = (errorContactMessage) => {
-        setvalidationPasswordError(errorContactMessage)
+    const setPasswordErrorMessage = (errorPasswordMessage) => {
+        setvalidationPasswordError(errorPasswordMessage)
         return false;
     }
     // function to handle setEmailAddressMessage
-    const setConfirmPasswordErrorMessage = (errorAddressMessage) => {
-        setvalidationConfirmPasswordError(errorAddressMessage)
+    const setConfirmPasswordErrorMessage = (errorConfirmPasswordMessage) => {
+        setvalidationConfirmPasswordError(errorConfirmPasswordMessage)
         return false;
-    }
+    } 
+    
+    
     // function to handle validation
     const handleValidation = async (event) => {
         event.preventDefault();
@@ -99,6 +101,10 @@ const RegisterComponent = () => {
         if (inputConfirmPassword === '') {
             console.log("Confirm Password is empty")
             return setConfirmPasswordErrorMessage("Confirm Password is left blank");
+        }
+        if (inputPassword != inputConfirmPassword) {
+            console.log("Password and Confirm Password are not match")
+            return setConfirmationPassword("Password and Confirm Password are not match")
         }
         else {
             setvalidationConfirmPasswordError('')
