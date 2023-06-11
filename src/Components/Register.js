@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const RegisterComponent = () => {
 
-    // useState for all four validationError : validationNameError , validationEmailError , validationContactError , vaildationAddressError
+    // useState for all four validationError : validationNameError , validationEmailError , validationPasswordError , validationConfirmPasswordError
     const [validationNameError, setvalidationNameError] = useState('');
     const [validationEmailError, setvalidationEmailError] = useState('');
     const [validationPasswordError, setvalidationPasswordError] = useState('');
@@ -102,10 +102,10 @@ const RegisterComponent = () => {
             console.log("Confirm Password is empty")
             return setConfirmPasswordErrorMessage("Confirm Password is left blank");
         }
-        if (inputPassword != inputConfirmPassword) {
-            console.log("Password and Confirm Password are not match")
-            return setConfirmationPassword("Password and Confirm Password are not match")
-        }
+        // if (inputPassword != inputConfirmPassword) {
+        //     console.log("Password and Confirm Password are not match")
+        //     return setConfirmationPassword("Password and Confirm Password are not match")
+        // }
         else {
             setvalidationConfirmPasswordError('')
         }
