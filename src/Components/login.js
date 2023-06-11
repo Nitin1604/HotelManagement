@@ -60,7 +60,7 @@ const LoginComponent = () => {
         }
         loginApiCall().then(response => {
             navigate("/register");
-            alert('You have been successfully logged in!!')
+            alert('You have been successfully logged in!!') 
         });
     }
 
