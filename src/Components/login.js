@@ -1,10 +1,13 @@
 import { useState } from "react"; // Import useState hook here
 import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
+import { useNavigate } from "react-router-dom";
 
 const LoginComponent = () => {
 
     const [validationNameError, setvalidationNameError] = useState('');
     const [validationPasswordError, setvalidationPasswordError] = useState('');
+
+    const navigate = useNavigate();
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -55,7 +58,35 @@ const LoginComponent = () => {
         else {
             setvalidationPasswordError('')
         }
+        loginApiCall().then(response => {
+            navigate("/register");
+        });
     }
+
+    const loginApiCall = async () => {
+        const url = "http://localhost:8080/login"
+
+        const data = {
+        
+            username: inputName,
+            password: inputPassword
+        }
+
+        const response = await fetch(url, {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: "same-origin", // include, *same-origin, omit
+            headers: {
+                "Content-Type": "application/json",
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: "follow", // manual, *follow, error
+            referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(data), // body data type must match "Content-Type" header
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
+    }
+
     return (
         <div id="LoginComponent">
 
