@@ -7,8 +7,8 @@ const RegisterComponent = () => {
     // useState for all four validationError : validationNameError , validationEmailError , validationContactError , vaildationAddressError
     const [validationNameError, setvalidationNameError] = useState('');
     const [validationEmailError, setvalidationEmailError] = useState('');
-    const [validatePasswordError, setvalidatePasswordError] = useState('');
-    const [validateConfirmPasswordError, setvalidateConfirmPasswordError] = useState('');
+    const [validationPasswordError, setvalidationPasswordError] = useState('');
+    const [validationConfirmPasswordError, setvalidationConfirmPasswordError] = useState('');
 
     const navigate = useNavigate();
 
@@ -57,12 +57,12 @@ const RegisterComponent = () => {
     }
     // function to handle setEmailContactMessage
     const setPasswordErrorMessage = (errorContactMessage) => {
-        setvalidatePasswordError(errorContactMessage)
+        setvalidationPasswordError(errorContactMessage)
         return false;
     }
     // function to handle setEmailAddressMessage
     const setConfirmPasswordErrorMessage = (errorAddressMessage) => {
-        setvalidateConfirmPasswordError(errorAddressMessage)
+        setvalidationConfirmPasswordError(errorAddressMessage)
         return false;
     }
     // function to handle validation
@@ -92,7 +92,7 @@ const RegisterComponent = () => {
             return setPasswordErrorMessage("Password is left blank");
         }
         else {
-            setvalidatePasswordError('')
+            setvalidationPasswordError('')
         }
 
         // When inputConfirmPassword were left blank
@@ -101,7 +101,7 @@ const RegisterComponent = () => {
             return setConfirmPasswordErrorMessage("Confirm Password is left blank");
         }
         else {
-            setvalidateConfirmPasswordError('')
+            setvalidationConfirmPasswordError('')
         }
         registerApiCall().then(response => {
             navigate("/");
@@ -193,18 +193,18 @@ const RegisterComponent = () => {
                         {/* Email block will ends here */}
 
                         {/* Contact block start here */}
-                        <div className="row">
+                        <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-2">
-                                        <label htmlFor="exampleInputContact">Password</label>
+                                        <label htmlFor="exampleInputName">Password</label>
                                         <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputContact" placeholder="Enter your phone no." value={inputPassword} onChange={handleInputPassword} />
+                                            <input className="form-control" id="exampleInputPassword" placeholder="Enter your Password" value={inputPassword} onChange={handleInputPassword} />
                                             {/* Validation Block start here */}
-                                            <div className="row">
+                                            <div className="row" hidden={validationPasswordError ===''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validatePasswordError}</div>
+                                                        <div className="col-sm-12 tx-center">{validationPasswordError}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,7 +228,7 @@ const RegisterComponent = () => {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
-                                                        <div className="col-sm-12 tx-center">{validateConfirmPasswordError}</div>
+                                                        <div className="col-sm-12 tx-center">{validationConfirmPasswordError}</div>
                                                     </div>
                                                 </div>
                                             </div>
