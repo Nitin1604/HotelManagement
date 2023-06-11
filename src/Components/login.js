@@ -38,8 +38,8 @@ const LoginComponent = () => {
         return false;
     }
 
-      // function to handle validation
-      const handleValidation = (event) => {
+    // function to handle validation
+    const handleValidation = (event) => {
         event.preventDefault();
         // when inputName were left blank
         if (inputName === '') {
@@ -60,15 +60,16 @@ const LoginComponent = () => {
         }
         loginApiCall().then(response => {
             navigate("/home");
-            alert('You have been successfully logged in!!') 
+            // alert('You have been successfully logged in!!') 
         });
     }
+
 
     const loginApiCall = async () => {
         const url = "http://localhost:8080/login"
 
         const data = {
-        
+
             username: inputName,
             password: inputPassword
         }
@@ -87,7 +88,6 @@ const LoginComponent = () => {
         });
         return response.json(); // parses JSON response into native JavaScript objects
     }
-
     return (
         <div id="LoginComponent">
 
@@ -163,6 +163,6 @@ const LoginComponent = () => {
         </div>
 
     );
-    }
+}
 
 export default LoginComponent;
