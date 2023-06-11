@@ -88,7 +88,7 @@ JSX File
 
 For Status Code vist this link => https://www.tutorialspoint.com/http/http_status_codes.htm#:~:text=The%20Status%2DCode%20element%20in,not%20have%20any%20categorization%20role.
 
-Hooks in React JS
+Point 1: Hooks in React JS
 
 Ques) What is the Hooks in React JS?
 Ans) A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. 
@@ -101,6 +101,7 @@ Ans ) Redux can be defined in following points
 
 3) It doesn't belong to the component state.
 
+Point 2: Hooks in Details
 More About Hooks in React JS
 Hooks were added to React in version 16.8. Hooks let you use state and other React features without writing a class.
 
@@ -137,6 +138,7 @@ const Blogs = () => {
 
 export default Blogs;
 
+Point 3: Hooks it's types
 React useState Hook
 useState is a Hook that lets you add React state to function components. 
 
@@ -145,7 +147,7 @@ To use useState, first we need to import useState and initialize it, you can imp
 
 import { useState } from "react";
 _____________________________________________________________________________________________________________________________________________________________________
-Initializing useState
+Point 4: Initializing useState
 You can initialize state like this:
 
 import { useState } from "react";
@@ -155,8 +157,7 @@ const App = () => {
 };
 useState takes initial state as argument and gives a state and a function(setName in this case) to update that state as we can't directly change/update a state. Also, these state names are just like variables, hence you can name them anything you like. 
 _____________________________________________________________________________________________________________________________________________________________________
-
-Reading a state
+Point 5: Reading a state
 As mentioned earlier, it returns a state and a function to change/update that state. Hence, everything is stored in name. We can read states just like variables:
 
 import { useState } from "react";
@@ -167,7 +168,7 @@ const App = () => {
     return <h1>My name is {name}</h1>
 };
 _____________________________________________________________________________________________________________________________________________________________________
-Updating a state
+Point 6: Updating a state
 To update state we use the function it returns to update state, in this case: setName. State can be updated like this:
 
 import { useState } from "react";
@@ -179,7 +180,7 @@ const App = () => {
     return <h1>My name is {name}</h1>
 };
 _____________________________________________________________________________________________________________________________________________________________________
-What can state hold?
+Point 7: What can state hold?
 Like normal variables, state can hold any datatype like strings, numbers, booleans, arrays, objects, objects in arrays, arrays in objects. For example:
 
 import { useState } from "react";
@@ -193,7 +194,7 @@ const App = () => {
     return <h1>My name is {data.name} and my age is {data.age}</h1>
 };
 _____________________________________________________________________________________________________________________________________________________________________
-Updating Objects and Arrays in State
+Point 8: Updating Objects and Arrays in State
 import { useState } from "react";
 
 const App = () => {
@@ -209,8 +210,7 @@ const App = () => {
 
 export default App;
 _____________________________________________________________________________________________________________________________________________________________________
-
-React useEffect Hook
+Point 9: React useEffect Hook
 The useEffect Hook allows you to perform side effects in your components.
 
 useEffect accepts two arguments. The second one is optional. 
@@ -233,8 +233,7 @@ function Home() {
 
 export default Home;
 _____________________________________________________________________________________________________________________________________________________________________
-
-Runs on first render:
+Point 10: Runs on first render:
 Code Example:
 import { useState, useEffect } from "react";
 
@@ -252,8 +251,7 @@ function Home() {
 
 export default Home;
 _____________________________________________________________________________________________________________________________________________________________________
-
-Runs when data changes:
+Point 11: Runs when data changes:
 Code Example:
 import { useState, useEffect } from "react";
 
