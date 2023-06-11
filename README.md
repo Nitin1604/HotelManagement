@@ -8,3 +8,5 @@ In this project i have using react js to make this project. This project has fou
 4) Contact.js
 
 These all pages happened with the help of the Router. The functionalities of Router is whenever user clicks on link it will go to another web page for example When clciking on the Contact.js it will redirect to Contact web page as so on.
+
+So this is all about my Hotel Management Project.
