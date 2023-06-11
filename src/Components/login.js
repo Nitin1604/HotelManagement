@@ -17,7 +17,6 @@ const LoginComponent = () => {
         setInputName(event.target.value);
     }
 
-
     // useState for setting the name
     const [inputPassword, setinputPassword] = useState('');
 
@@ -64,12 +63,10 @@ const LoginComponent = () => {
         });
     }
 
-
     const loginApiCall = async () => {
         const url = "http://localhost:8080/login"
 
         const data = {
-
             username: inputName,
             password: inputPassword
         }
