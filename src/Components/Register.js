@@ -138,7 +138,7 @@ const RegisterComponent = () => {
             <div className="content">
                 <div className='container my-5 offset-sm-4'>
 
-                    <h3 className="heading_h3">Sign up</h3>
+                    <h3 className="heading_h3">Register</h3>
                     {/* form will start here */}
                     <form onSubmit={handleValidation}>
 
@@ -242,7 +242,7 @@ const RegisterComponent = () => {
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
-                            <button type="Submit" className="btn btn-danger submitClass" >Sign up</button>
+                            <button type="Submit" className="btn btn-danger submitClass" >Register</button>
                         </div>
                         {/* Submit Button block ends here */}
 
