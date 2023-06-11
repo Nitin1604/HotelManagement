@@ -14,7 +14,7 @@
 }
 
 /* login.js css for form-control1 */
-.form-control1 {
+.form-control1 , .form-control2 , .form-control3 {
     width: 200px;
     margin-left: 20px;
     padding: 0.375rem 0.75rem;
@@ -24,16 +24,6 @@
     border-radius: 0.25rem;
 }
 
-/* login.js css for form-control2*/
-.form-control2 {
-    width: 200px;
-    margin-right: 14px;
-    padding: 0.375rem 0.75rem;
-    color: #245689;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-}
 /* login.js css : (className: heading_h2) */
 .heading_h2 {
     margin-left: 100px;

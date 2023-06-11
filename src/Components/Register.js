@@ -172,7 +172,7 @@ const RegisterComponent = () => {
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row my-2">
+                                    <div className="row my-3">
                                         <label htmlFor="exampleInputName">Email</label>
                                         <div className="col-sm-10">
                                             <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
@@ -192,16 +192,16 @@ const RegisterComponent = () => {
                         </div>
                         {/* Email block will ends here */}
 
-                        {/* Contact block start here */}
+                        {/* Password block start here */}
                         <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row my-2">
-                                        <label htmlFor="exampleInputName">Password</label>
-                                        <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputPassword" placeholder="Enter your Password" value={inputPassword} onChange={handleInputPassword} />
+                                    <div className="row my-3">
+                                        <label htmlFor="exampleInputPasword">Password</label>
+                                        <div className="col-sm-8">
+                                            <input className="form-control" id="exampleInputPassword" placeholder="Enter your Paswword" value={inputPassword} onChange={handleInputPassword} />
                                             {/* Validation Block start here */}
-                                            <div className="row" hidden={validationPasswordError ===''}>
+                                            <div className="row" hidden={validationPasswordError === ''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
                                                         <div className="col-sm-12 tx-center">{validationPasswordError}</div>
@@ -214,18 +214,18 @@ const RegisterComponent = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Contact block ends here */}
+                        {/* Password block ends here */}
 
-                        {/* Address block start here */}
-                        <div className="row">
+                        {/* Confirm Password block start here */}
+                        <div className='row'>
                             <div className="col-sm-4">
                                 <div className="form-group">
-                                    <div className="row my-2">
-                                        <label htmlFor="exampleInputAddress">Confirm Password</label>
-                                        <div className="col-sm-10">
-                                            <input type="text" className="form-control" id="exampleInputAddress" placeholder="Enter your address" value={inputConfirmPassword} onChange={handleInputConfirmPassword} />
+                                    <div className="row my-3">
+                                    <label for="exampleInputConfirmPasword" class="col-sm-3">Confirm Password</label>
+                                        <div className="col-sm-9">
+                                            <input className="form-control" id="exampleInputPassword" placeholder="Enter your Confirm Password" value={inputConfirmPassword} onChange={handleInputConfirmPassword} />
                                             {/* Validation Block start here */}
-                                            <div className="row">
+                                            <div className="row" hidden={validationConfirmPasswordError === ''}>
                                                 <div className="col-sm-12">
                                                     <div className="row my-2 tx-red">
                                                         <div className="col-sm-12 tx-center">{validationConfirmPasswordError}</div>
@@ -238,10 +238,7 @@ const RegisterComponent = () => {
                                 </div>
                             </div>
                         </div>
-
-
-
-                        {/* Address block ends here */}
+                        {/* Confirm Password block ends here */}
 
                         {/* Submit Button block start here */}
                         <div className='my-2'>
