@@ -169,7 +169,7 @@ const ContactComponent = () => {
                                     <div className="row my-2">
                                         <label htmlFor="exampleInputName">Contact</label>
                                         <div className="col-sm-10">
-                                            <input className="form-control" id="exampleInputEmail" placeholder="Enter your email" value={inputEmail} onChange={handleInputEmail} />
+                                            <input className="form-control" id="exampleInputContact" placeholder="Enter your contact" value={inputContact} onChange={handleInputContact} />
                                             {/* Validation Block start here */}
                                             <div className="row" hidden={validationContactError ===''}>
                                                 <div className="col-sm-12">
