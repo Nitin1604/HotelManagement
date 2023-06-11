@@ -6,6 +6,7 @@ import AboutComponent from "./About";
 import ContactComponent from "./Contact";
 
 import React from 'react';
+import RegisterComponent from "./Register";
 
 
 const RouterConfig = () => {
@@ -20,6 +21,7 @@ const RouterConfig = () => {
                     <Route exact path='/home' element={< HomeComponent />} />
                     <Route exact path='/about' element={< AboutComponent />} />
                     <Route exact path='/contact' element={< ContactComponent />} />
+                    <Route exact path='/register' element={< RegisterComponent />} />
                 </Routes>
             </BrowserRouter>
         </div>

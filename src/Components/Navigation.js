@@ -19,6 +19,9 @@ const NavigationComponent = () => {
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/contact">Contact Us</a>
                             </li>
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="/register">Register</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
