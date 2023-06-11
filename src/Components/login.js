@@ -59,7 +59,7 @@ const LoginComponent = () => {
             setvalidationPasswordError('')
         }
         loginApiCall().then(response => {
-            navigate("/register");
+            navigate("/home");
             alert('You have been successfully logged in!!') 
         });
     }
