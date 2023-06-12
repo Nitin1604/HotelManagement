@@ -6,8 +6,10 @@ const LoginComponent = () => {
 
     const [validationNameError, setvalidationNameError] = useState('');
     const [validationPasswordError, setvalidationPasswordError] = useState('');
+    const [validationUserNameError, setvalidationUserNameError] = useState('');
+    const [validationUserPasswordError, setvalidationUserPasswordError] = useState('');
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -23,6 +25,17 @@ const LoginComponent = () => {
     // function to handle the InputName
     function handleInputPassword(event) {
         setinputPassword(event.target.value);
+    }
+    
+    // function to handle setUserNameErrorMessage comes from server registered username
+    const setUserNameErrorMessage = (errorUserNameMessage) => {
+        setvalidationUserNameError(errorUserNameMessage)
+        return false;
+    }
+
+    const setUserPasswordErrorMessage = (errorUserPasswordMessage) => {
+        setPasswordErrorMessage(errorUserPasswordMessage)
+        return false;
     }
 
     // function to handle setNameErrorMessage
@@ -58,7 +71,7 @@ const LoginComponent = () => {
             setvalidationPasswordError('')
         }
         loginApiCall().then(response => {
-            navigate("/home");
+            // navigate("/home");
             // alert('You have been successfully logged in!!') 
         });
     }
@@ -70,7 +83,21 @@ const LoginComponent = () => {
             username: inputName,
             password: inputPassword
         }
-
+    // Error comes when both user name and password were input incorrectly
+ 
+        if (data.username != 'nitin82'){
+            return setUserNameErrorMessage("Invalid User Name")
+        }
+        else {
+            setvalidationUserNameError('')
+        }
+        if (data.password != 'test123'){
+            return setUserPasswordErrorMessage("Incorrect Pasword")
+        }
+        else {
+            setvalidationUserPasswordError('')
+        }
+ 
         const response = await fetch(url, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -113,6 +140,26 @@ const LoginComponent = () => {
                                             </div>
                                         </div>
                                         {/* Validation Block will ends here */}
+
+                                        {/* Server validation Block for user name will start here */}
+                                            <div className="row" hidden={validationUserNameError != 'nitin82'}>
+                                                <div className="col-sm-12">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-10 tx-center">{validationUserNameError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {/* Server validation Block for user name will ends here */}
+
+                                        {/* Server validation Block for user password will start here */}
+                                            <div className="row" hidden={validationUserPasswordError !='test123'}>
+                                                <div className="col-sm-12">
+                                                    <div className="row my-2 tx-red">
+                                                        <div className="col-sm-10 tx-center">{validationUserPasswordError}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {/* Server validation Block for user password will ends here */}
 
                                     </div>
                                 </div>
