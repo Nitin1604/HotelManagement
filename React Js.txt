@@ -155,7 +155,8 @@ import { useState } from "react";
 const App = () => {
     const [name, setName] = useState('')
 };
-useState takes initial state as argument and gives a state and a function(setName in this case) to update that state as we can't directly change/update a state. Also, these state names are just like variables, hence you can name them anything you like. 
+useState takes initial state as argument and gives a state and a function(setName in this case) to update that state as we can't directly change/update a state.
+ Also, these state names are just like variables, hence you can name them anything you like. 
 _____________________________________________________________________________________________________________________________________________________________________
 Point 5: Reading a state
 As mentioned earlier, it returns a state and a function to change/update that state. Hence, everything is stored in name. We can read states just like variables:
