@@ -66,6 +66,7 @@ const RegisterComponent = () => {
         return false;
     } 
     
+    // function to handle setConfirmationPasswordErrorMessage
     const setConfirmationPasswordErrorMessage = (errorConfirmationPasswordMessage) => {
         setvalidationConfirmPasswordError(errorConfirmationPasswordMessage)
         return false;
