@@ -27,12 +27,13 @@ const LoginComponent = () => {
         setinputPassword(event.target.value);
     }
     
-    // function to handle setUserNameErrorMessage comes from server registered username
+    // function to handle setUserNameErrorMessage comes from server for registered username
     const setUserNameErrorMessage = (errorUserNameMessage) => {
         setvalidationUserNameError(errorUserNameMessage)
         return false;
     }
 
+    // function to handle setUserPasswordErrorMessage comes from server for registered user password 
     const setUserPasswordErrorMessage = (errorUserPasswordMessage) => {
         setPasswordErrorMessage(errorUserPasswordMessage)
         return false;
