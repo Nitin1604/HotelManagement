@@ -107,6 +107,7 @@ const RegisterComponent = () => {
             console.log("Confirm Password is empty")
             return setConfirmPasswordErrorMessage("Confirm Password is left blank");
         }
+        // when inputPassword and inputConfirmPassword are not match to each other
         if (inputPassword != inputConfirmPassword) {
             console.log("Password and Confirm Password are not match")
             return setConfirmationPasswordErrorMessage("Password and Confirm Password are not match")
