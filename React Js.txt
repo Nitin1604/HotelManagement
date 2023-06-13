@@ -279,8 +279,13 @@ export default Home;
 _____________________________________________________________________________________________________________________________________________________________________
 Point 12: API Call
 What is an API call?
-Application programming interfaces (APIs) are a way for one program to interact with another. API calls are the medium by which they interact. An API call, or API request, is a message sent to a server asking an API to provide a service or information.
+Application programming interfaces (APIs) are a way for one program to interact with another.
+ API calls are the medium by which they interact. An API call, or API request, 
+ is a message sent to a server asking an API to provide a service or information.
 
-If Jan is hosting a lot of guests for dinner, she might call a catering company and ask that they prepare food for the party. This saves her a great deal of time and effort preparing food herself. Similarly, one application can "call" another for needed data or functionality. This ensures developers do not have to spend time and effort building application capabilities that can be integrated via API.
+If Jan is hosting a lot of guests for dinner, she might call a catering company and 
+ask that they prepare food for the party. This saves her a great deal of time and 
+effort preparing food herself. Similarly, one application can "call" another for needed data or functionality. 
+This ensures developers do not have to spend time and effort building application capabilities that can be integrated via API.
 
 Because APIs are integrated into almost all web applications today, API calls take place behind the scenes all the time. Suppose someone searches for bus tickets on a travel website. The travel website sends an API call to the various bus companies' servers and receives back information about what rides are available and how much they cost. From the user's perspective, this process should be almost instantaneous.
