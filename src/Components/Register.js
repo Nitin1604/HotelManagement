@@ -119,6 +119,7 @@ const RegisterComponent = () => {
         });
     }
 
+    // Register Api call
     const registerApiCall = async () => {
         const url = "http://localhost:8080/register"
 

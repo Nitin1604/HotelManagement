@@ -77,6 +77,7 @@ const LoginComponent = () => {
         });
     }
 
+    // loginApi call
     const loginApiCall = async () => {
         const url = "http://localhost:8080/login"
 
