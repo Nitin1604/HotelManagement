@@ -237,6 +237,7 @@ const RegisterComponent = () => {
                                     <label for="exampleInputConfirmPasword" class="col-sm-3">Confirm Password</label>
                                         <div className="col-sm-9">
                                             <input type="password" className="form-control" id="exampleInputPassword" placeholder="Enter your Confirm Password" value={inputConfirmPassword} onChange={handleInputConfirmPassword} />
+
                                             {/* Validation Block start here */}
                                             <div className="row" hidden={validationConfirmPasswordError === ''}>
                                                 <div className="col-sm-12">
@@ -246,6 +247,7 @@ const RegisterComponent = () => {
                                                 </div>
                                             </div>
                                             {/* Validation Block ends here */}
+                                            
                                         </div>
                                     </div>
                                 </div>
