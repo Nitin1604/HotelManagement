@@ -293,3 +293,11 @@ Because APIs are integrated into almost all web applications today, API calls ta
 scenes all the time. Suppose someone searches for bus tickets on a travel website. The travel website 
 sends an API call to the various bus companies' servers and receives back information about what rides are available 
 and how much they cost. From the user's perspective, this process should be almost instantaneous.
+_____________________________________________________________________________________________________________________________________________________________________
+Shortcuts use in this IDE Visual Studio Code
+To open Explorer : Ctrl + Shift + E 
+Format Document : Ctrl + Shift + F 
+Change All Occurrences : Ctrl + F2 
+Rename Symbol : F2 
+Copy Text : Ctrl + C
+Paste Text : Ctrl + V 
