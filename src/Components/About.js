@@ -20,6 +20,7 @@ const AboutComponent = () => {
                                     <p className="card-text">Radisson Noida Hotel has many facilities like Free Parking,
                                         Free WiFi , Swimming Pool , Bath , Air conditioning , Daily
                                         HouseKeeping , Key card access etc.
+                                        {/* Image "hotel3" will inserted here */}
                                         <img src={hotel3} alt="hotel3" />
                                     </p>
                                     {/* card-text ends here */}
@@ -37,7 +38,7 @@ const AboutComponent = () => {
                                     <p className="card-text">This hotel provides many facilities such as Free WiFi, 
                                     Free Parking, Room Service , Non Smoking Rooms and Fabulous breakfast.
                                     Featuring 3-star accommodation.
-
+                                        {/* Image "hotel2" will inserted here */}
                                         <img src={hotel2} alt="hotel2" />
                                     </p>
                                     {/* card-text ends here */}
