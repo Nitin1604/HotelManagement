@@ -3,11 +3,10 @@ import NavigationComponent from "./Navigation"; // Importing Navigation bar in l
 
 const ContactComponent = () => {
     
-    // useState for all four validationError : validationNameError , validationEmailError , validationContactError , vaildationAddressError
-    const [validationNameError, setvalidationNameError] = useState('');
-    const [validationEmailError, setvalidationEmailError] = useState('');
-    const [validationContactError, setvalidationContactError] = useState('');
-    const [validationAddressError, setvalidationAddressError] = useState('');
+    const [validationNameError, setvalidationNameError] = useState(''); // useState for validationNameError
+    const [validationEmailError, setvalidationEmailError] = useState(''); // useState for validationEmailError
+    const [validationContactError, setvalidationContactError] = useState(''); // useState for validationContactError
+    const [validationAddressError, setvalidationAddressError] = useState(''); // useState for validationAddressError
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
