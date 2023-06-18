@@ -9,7 +9,7 @@ const LoginComponent = () => {
     const [validationUserNameError, setvalidationUserNameError] = useState('');
     const [validationUserPasswordError, setvalidationUserPasswordError] = useState('');
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     // useState for setting the name
     const [inputName, setInputName] = useState('');
@@ -72,7 +72,7 @@ const LoginComponent = () => {
             setvalidationPasswordError('')
         }
         loginApiCall().then(response => {
-            // navigate("/home");
+            navigate("/home");
             // alert('You have been successfully logged in!!') 
         });
     }

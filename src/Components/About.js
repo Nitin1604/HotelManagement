@@ -3,7 +3,6 @@ import NavigationComponent from "./Navigation";
 import hotel2 from './hotel2.jpg';
 import hotel3 from './hotel3.jpg';
 const AboutComponent = () => {
-
     return (
         <>
             <div id="AboutComponent">
@@ -56,4 +55,3 @@ const AboutComponent = () => {
 }
 
 export default AboutComponent;
-
