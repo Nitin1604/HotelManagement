@@ -5,8 +5,9 @@ import foodCourt2 from './foodCourt2.jpg';
 import hotel1 from './hotel1.jpg';
 import hotel2 from './hotel2.jpg';
 import hotel3 from './hotel3.jpg';
-const HomeComponent = () => {
 
+const HomeComponent = () => {
+   
     return (
         <>
             <div id="HomeComponent">
