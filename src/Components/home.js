@@ -13,11 +13,13 @@ const HomeComponent = () => {
             <div id="HomeComponent">
                 <NavigationComponent />
                 <div className="content">
+
                     {/* First row contains 5 different images and their description also */}
                     <div className="row">
                     {/* card 1 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
+
                                 {/* Image 1 is inserted here */}
                                 <img src={foodCourt1} alt="foodCourt1" />
                                 <div className="card-body">
@@ -31,6 +33,7 @@ const HomeComponent = () => {
                         {/* card 2 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
+
                                 {/* Image 2 is inserted here */}
                                 <img src={foodCourt2} alt="foodCourt2" />
                                 <div className="card-body">
@@ -44,6 +47,7 @@ const HomeComponent = () => {
                         {/* card 3 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
+
                                 {/* Image 3 is inserted here */}
                                 <img src={hotel1} alt="hotel1" />
                                 <div className="card-body">
@@ -57,6 +61,7 @@ const HomeComponent = () => {
                         {/* card 4 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-4">
+
                                 {/* Image 4 is inserted here */}
                                 <img src={hotel2} alt="hotel2" />
                                 <div className="card-body">
@@ -70,6 +75,7 @@ const HomeComponent = () => {
                         {/* card 5 block start here */}
                         <div className="col-sm-2">
                             <div className="card mx-2 my-2">
+                                
                                 {/* Image 5 is inserted here */}
                                 <img src={hotel3} alt="hotel3" />
                                 <div className="card-body">
