@@ -64,7 +64,7 @@ const ContactComponent = () => {
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault();
-        // when inputName were left blank and when inputName were filled then remove the validationNameError message
+        // when inputName were left blank 
         if (inputName === '') {
             console.log("Name slot is empty")
             return setNameErrorMessage("Name is left blank");
@@ -73,7 +73,7 @@ const ContactComponent = () => {
             setvalidationNameError('')
         }
     
-      // When inputEmail were left blank and when inputEmail were filled then remove the validationEmailError message
+      // When inputEmail were left blank 
       if (inputEmail === '') {
           console.log("Email slot is empty")
           return setEmailErrorMessage("Email is left blank");
@@ -82,7 +82,7 @@ const ContactComponent = () => {
             setvalidationEmailError('')
         }
        
-        // When inputContact were left blank and when inputContact were filled then remove the validationContactError message
+        // When inputContact were left blank 
         if (inputContact === '') {
             console.log("Contact slot is empty")
             return setContactErrorMessage("Contact is left blank");
@@ -91,7 +91,7 @@ const ContactComponent = () => {
             setvalidationContactError('')
         }
        
-        // When inputAddress were left blank and when inputAddress were filled then remove the validationAddressError message
+        // When inputAddress were left blank 
         if (inputAddress === '') {
             console.log("Address slot is empty")
             return setAddressErrorMessage("Address is left blank");

@@ -75,31 +75,31 @@ const RegisterComponent = () => {
     // function to handle validation
     const handleValidation = async (event) => {
         event.preventDefault();
-        // when inputName were left blank and when inputName were filled then remove the validationNameError message
+        // when inputName were left blank 
         if (inputName === '') {
             console.log("Name slot is empty")
             return setNameErrorMessage("Name is left blank");
         }
         else {
-            setvalidationNameError('')
+            setvalidationNameError('') // set the validation error when inputName was filled.
         }
 
-        // When inputEmail were left blank and when inputEmail were filled then remove the validationEmailError message
+        // When inputEmail were left blank 
         if (inputEmail === '') {
             console.log("Email slot is empty")
-            return setEmailErrorMessage("Email is left blank");
+            return setEmailErrorMessage("Email is left blank"); 
         }
         else {
-            setvalidationEmailError('')
+            setvalidationEmailError('') // set the validation error when inputEmail was filled.
         }
 
-        // When inputContact were left blank and when inputPassword were filled then remove the validationPassowrdErorr message
+        // When inputContact were left blank 
         if (inputPassword === '') {
             console.log("Password slot is empty")
-            return setPasswordErrorMessage("Password is left blank");
+            return setPasswordErrorMessage("Password is left blank"); 
         }
         else {
-            setvalidationPasswordError('')
+            setvalidationPasswordError('') // set the validation error when inputPassword was filled.
         }
 
         // When inputConfirmPassword were left blank

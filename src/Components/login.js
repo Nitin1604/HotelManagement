@@ -54,22 +54,22 @@ const LoginComponent = () => {
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault();
-        // when inputName were left blank and when the inputName were filled then remove validationNameError message
+        // when inputName were left blank 
         if (inputName === '') {
             console.log("Name slot is empty")
             return setNameErrorMessage("Name field is empty");
         }
         else {
-            setvalidationNameError('')
+            setvalidationNameError('') // set the validation error when inputName was filled. 
         }
 
-        // When inputPassword were left blank and when the inputPassword were filled then remove validationPasswordError message  
+        // When inputPassword were left blank  
         if (inputPassword === '') {
             console.log("Password slot is empty")
-            return setPasswordErrorMessage("Password field is empty");
+            return setPasswordErrorMessage("Password field is empty"); 
         }
         else {
-            setvalidationPasswordError('')
+            setvalidationPasswordError('') // set the validation password when inputPassword was filled.
         }
         loginApiCall().then(response => {
             navigate("/home");
