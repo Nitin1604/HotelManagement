@@ -7,7 +7,7 @@ In this project i have inserted five web pages that are as follows:-
 (2) home.js 
 (3) About.js
 (4) Contact.js 
-5) Register.js
+(5) Register.js
 
 All these 5 web pages can be happened with the installation of Router in my project
 Router can be installed with this commands in VS Code's Terminal or in Command Prompt
