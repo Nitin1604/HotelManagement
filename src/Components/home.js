@@ -22,6 +22,7 @@ const HomeComponent = () => {
 
                                 {/* Image 1 is inserted here */}
                                 <img src={foodCourt1} alt="foodCourt1" />
+                                {/* Image 1 is inserted here */}
                                 <div className="card-body">
                                     <h5 className="card-title">Burger King</h5>
                                     <p className="card-text">Burger King is located near Noida Electronic City Metro Station. It is good place to eat fast food.</p>
@@ -36,6 +37,7 @@ const HomeComponent = () => {
 
                                 {/* Image 2 is inserted here */}
                                 <img src={foodCourt2} alt="foodCourt2" />
+                                {/* Image 2 is inserted here */}
                                 <div className="card-body">
                                     <h5 className="card-title">Mcdonald's Shop</h5>
                                     <p className="card-text">Mcdonald's Shop is located near Noida Sector 16. It is also good place to visit and eat fast food.</p>
@@ -50,6 +52,7 @@ const HomeComponent = () => {
 
                                 {/* Image 3 is inserted here */}
                                 <img src={hotel1} alt="hotel1" />
+                                {/* Image 3 is inserted here */}
                                 <div className="card-body">
                                     <h5 className="card-title">Hotel in Noida</h5>
                                     <p className="card-text">This hotel is located near Ducat which is in Noida Sector 16. This hotel is best for tourism to stay in this hotel.</p>
@@ -64,6 +67,7 @@ const HomeComponent = () => {
 
                                 {/* Image 4 is inserted here */}
                                 <img src={hotel2} alt="hotel2" />
+                                {/* Image 4 is inserted here */}
                                 <div className="card-body">
                                     <h5 className="card-title">Sandal Suites Hotels, Noida</h5>
                                     <p className="card-text">Sandal Suites, operated by Lemon Tree Hotels, is situated just off the Noida-Greater Noida Expressway. </p>
