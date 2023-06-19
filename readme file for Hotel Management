@@ -17,22 +17,22 @@ After that react router is installed in the react application
 The main functionalities of the React Router is to visit another web page 
 for example i have made five web pages that are login.js , home.js , About.js ,
 Contact.js and Register.js 
-_______________________________
+__________________________________________________________________
 (1) login.js to home.js 
 (2) login.js to About.js
 (3) login.js to Contact.js 
 (4) login.js to Register.js
-_______________________________ 
+___________________________________________________________________ 
 (5) home.js to login.js
 (6) home.js to About.js
 (7) home.js to Contact.js
 (8) home.js to Register.js
-_______________________________
+___________________________________________________________________
 (9) About.js to login.js
 (10) About.js to home.js
 (11) About.js to Contact.js
 (12) About.js to Register.js
-____________________________________
+___________________________________________________________________
 (13) Contact.js to login.js
 (14) Contact.js to home.js
 (15) Contact.js to About.js
