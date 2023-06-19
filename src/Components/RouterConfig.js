@@ -16,11 +16,11 @@ const RouterConfig = () => {
             <Route> and corresponding closing all the components as </BrowserRouter> , </Routes> and </Routes> */}
             <BrowserRouter>
                 <Routes>
-                    <Route exact path='/' element={< LoginComponent />} />
-                    <Route exact path='/home' element={< HomeComponent />} />
-                    <Route exact path='/about' element={< AboutComponent />} />
-                    <Route exact path='/contact' element={< ContactComponent />} />
-                    <Route exact path='/register' element={< RegisterComponent />} />
+                    <Route exact path='/' element={< LoginComponent />} />            {/* Navigate to login page */}      
+                    <Route exact path='/home' element={< HomeComponent />} />         {/* Navigate to home page */}
+                    <Route exact path='/about' element={< AboutComponent />} />       {/* Navigate to about page */}
+                    <Route exact path='/contact' element={< ContactComponent />} />   {/* Navigate to contact page */}
+                    <Route exact path='/register' element={< RegisterComponent />} /> {/* Navigate to register page*/}
                 </Routes>
             </BrowserRouter>
         </div>
