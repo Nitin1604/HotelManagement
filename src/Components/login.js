@@ -54,7 +54,7 @@ const LoginComponent = () => {
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault();
-        // when inputName were left blank
+        // when inputName were left blank and when the inputName were filled then remove validationNameError message
         if (inputName === '') {
             console.log("Name slot is empty")
             return setNameErrorMessage("Name field is empty");
@@ -63,7 +63,7 @@ const LoginComponent = () => {
             setvalidationNameError('')
         }
 
-        // When inputPassword were left blank
+        // When inputPassword were left blank and when the inputPassword were filled then remove validationPasswordError message  
         if (inputPassword === '') {
             console.log("Password slot is empty")
             return setPasswordErrorMessage("Password field is empty");
