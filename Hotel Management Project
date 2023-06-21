@@ -1,4 +1,4 @@
-Hotel Management Project using React JS
+********** Hotel Management Project using React JS **********
 
 This project has four web pages => login.js , About.js , Home.js and Contact.js
 login.js has two validation i.e Name and Password when they were left empty
