@@ -146,8 +146,8 @@ Importing useState
 To use useState, first we need to import useState and initialize it, you can import it from react like this:
 
 import { useState } from "react";
-_____________________________________________________________________________________________________________________________________________________________________
-Point 4: Initializing useState
+
+------------------------------------ Point 4: Initializing useState ------------------------------------
 You can initialize state like this:
 
 import { useState } from "react";
