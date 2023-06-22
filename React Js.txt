@@ -210,8 +210,8 @@ const App = () => {
 };
 
 export default App;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 9: React useEffect Hook
+
+------------------------------------ Point 9: React useEffect Hook ------------------------------------
 The useEffect Hook allows you to perform side effects in your components.
 
 useEffect accepts two arguments. The second one is optional. 
