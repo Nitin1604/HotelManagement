@@ -138,7 +138,7 @@ const Blogs = () => {
 
 export default Blogs;
 
-Point 3: Hooks it's types
+------------------------------------ Point 3: Hooks it's types ------------------------------------
 React useState Hook
 useState is a Hook that lets you add React state to function components. 
 
