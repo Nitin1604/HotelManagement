@@ -38,7 +38,7 @@ export default App;
 The main feature of class-based components that distinguished them from functional components 
 is that they have access to a state which dictates the current behavior and appearance of the component.
 
-Functional Based Components
+------------------------------------ Functional Based Components ------------------------------------
  These are simply JavaScript functions. We can create a functional component in React by writing a JavaScript function. 
  These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.
 
