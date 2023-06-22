@@ -277,8 +277,8 @@ function Home() {
 }
 
 export default Home;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 12: API Call
+
+------------------------------------ Point 12: API Call ------------------------------------
 What is an API call?
 Application programming interfaces (APIs) are a way for one program to interact with another.
  API calls are the medium by which they interact. An API call, or API request, 
