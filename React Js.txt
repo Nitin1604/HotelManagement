@@ -1,4 +1,4 @@
-What is state?
+------------------------------------ What is state? ------------------------------------
 1) State is a built in object of the React Components.
 2) The State object is used to store all the data that belongs to that particular 
 component only.
@@ -7,7 +7,7 @@ component only.
 5) Whenever the state object changes the component is re-rendered 
 6) To use state inside a class component "this.state" is used.
 
-What is "Props"?
+------------------------------------ What is "Props"? ------------------------------------
 1) React is a component based library which divides the UI into little
 resusable pieces.
 
