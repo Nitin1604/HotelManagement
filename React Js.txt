@@ -169,7 +169,7 @@ const App = () => {
     return <h1>My name is {name}</h1>
 };
 
-Point 6: Updating a state
+------------------------------------ Point 6: Updating a state ------------------------------------
 To update state we use the function it returns to update state, in this case: setName. State can be updated like this:
 
 import { useState } from "react";
