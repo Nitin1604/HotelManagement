@@ -42,7 +42,7 @@ is that they have access to a state which dictates the current behavior and appe
  These are simply JavaScript functions. We can create a functional component in React by writing a JavaScript function. 
  These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.
 
- Different ways of calling the functional component:
+ ------------------------------------ Different ways of calling the functional component: ------------------------------------
 
  1. Calling the function by using the name of the function followed by the Parentheses.
 
@@ -69,7 +69,7 @@ function Comp() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Comp />);
 
-JSX 
+------------------------------------ JSX(JavaScript Extension) ------------------------------------
 JSX(JavaScript Extension), is a React extension which allows writing JavaScript code that looks like HTML.
 In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax 
 can co-exist with JavaScript/React code.The syntax is used by preprocessors (i.e., transpilers like babel) 
