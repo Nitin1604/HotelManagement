@@ -251,8 +251,8 @@ function Home() {
 }
 
 export default Home;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 11: Runs when data changes:
+
+------------------------------------ Point 11: Runs when data changes: ------------------------------------
 Code Example:
 import { useState, useEffect } from "react";
 
