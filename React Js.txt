@@ -180,8 +180,8 @@ const App = () => {
 
     return <h1>My name is {name}</h1>
 };
-_____________________________________________________________________________________________________________________________________________________________________
-Point 7: What can state hold?
+
+------------------------------------ Point 7: What can state hold? ------------------------------------
 Like normal variables, state can hold any datatype like strings, numbers, booleans, arrays, objects, objects in arrays, arrays in objects. For example:
 
 import { useState } from "react";
