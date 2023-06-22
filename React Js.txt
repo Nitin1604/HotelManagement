@@ -194,8 +194,8 @@ const App = () => {
 
     return <h1>My name is {data.name} and my age is {data.age}</h1>
 };
-_____________________________________________________________________________________________________________________________________________________________________
-Point 8: Updating Objects and Arrays in State
+
+------------------------------------ Point 8: Updating Objects and Arrays in State ------------------------------------
 import { useState } from "react";
 
 const App = () => {
