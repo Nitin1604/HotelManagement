@@ -101,7 +101,7 @@ Ans ) Redux can be defined in following points
 
 3) It doesn't belong to the component state.
 
-Point 2: Hooks in Details
+------------------------------------Point 2: Hooks in Details
 More About Hooks in React JS
 Hooks were added to React in version 16.8. Hooks let you use state and other React features without writing a class.
 
