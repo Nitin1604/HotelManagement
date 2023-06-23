@@ -45,7 +45,6 @@ const ContactComponent = () => {
         setvalidationNameError(errorNameMessage)
         return false;
     }
-
     // function to handle setEmailErrorMessage
     const setEmailErrorMessage = (errorEmailMessage) => {
         setvalidationEmailError(errorEmailMessage)
