@@ -48,7 +48,7 @@ In contact.js i have created a form having four fields
 Name , Email , Contact Us and Address and this form has 
 a Register button for registration. In this form of registeration
 i have created a validation error when all four fields were left empty
-_______________________________________________________________________
+*******************************************************************
 
 When clciking on the registration button form was registered successfull
 and navigate to dashboard / home.js web pages
