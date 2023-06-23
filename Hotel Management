@@ -37,7 +37,7 @@ Contact.js and Register.js
 (14) Contact.js to home.js
 (15) Contact.js to About.js
 (16) Contact.js to Register.js
-______________________________________________________________________
+*******************************************************************
 In login.js i have created a form and it has two fields 
 Name, Password and login button for successfull login
 I have also created validation error when these two fields are
