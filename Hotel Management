@@ -42,7 +42,7 @@ In login.js i have created a form and it has two fields
 Name, Password and login button for successfull login
 I have also created validation error when these two fields are
 left empty whenever it was clicked on login button.
-______________________________________________________________________
+*******************************************************************
 In home.js and About.js i have inserted some of the images 
 In contact.js i have created a form having four fields 
 Name , Email , Contact Us and Address and this form has 
