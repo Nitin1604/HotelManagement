@@ -1,4 +1,4 @@
-What is state?
+------------------------------------ What is state? ------------------------------------
 1) State is a built in object of the React Components.
 2) The State object is used to store all the data that belongs to that particular 
 component only.
@@ -7,7 +7,7 @@ component only.
 5) Whenever the state object changes the component is re-rendered 
 6) To use state inside a class component "this.state" is used.
 
-What is "Props"?
+------------------------------------ What is "Props"? ------------------------------------
 1) React is a component based library which divides the UI into little
 resusable pieces.
 
@@ -20,7 +20,7 @@ being used for passing data from one component to another.
 4) But the important part here is that data with props are being passed in 
 a uni-directional flow. (one way from parent to child).
 
-Class Based Components
+------------------------------------ Class Based Components ------------------------------------
 These components are simple classes (made up of multiple functions that add functionality to the application).
  All class based components are child classes for the Component class of ReactJS.
 
@@ -38,11 +38,11 @@ export default App;
 The main feature of class-based components that distinguished them from functional components 
 is that they have access to a state which dictates the current behavior and appearance of the component.
 
-Functional Based Components
+------------------------------------ Functional Based Components ------------------------------------
  These are simply JavaScript functions. We can create a functional component in React by writing a JavaScript function. 
  These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.
 
- Different ways of calling the functional component:
+ ------------------------------------ Different ways of calling the functional component: ------------------------------------
 
  1. Calling the function by using the name of the function followed by the Parentheses.
 
@@ -69,7 +69,7 @@ function Comp() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Comp />);
 
-JSX 
+------------------------------------ JSX(JavaScript Extension) ------------------------------------
 JSX(JavaScript Extension), is a React extension which allows writing JavaScript code that looks like HTML.
 In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax 
 can co-exist with JavaScript/React code.The syntax is used by preprocessors (i.e., transpilers like babel) 
@@ -88,7 +88,7 @@ JSX File
 
 For Status Code vist this link => https://www.tutorialspoint.com/http/http_status_codes.htm#:~:text=The%20Status%2DCode%20element%20in,not%20have%20any%20categorization%20role.
 
-Point 1: Hooks in React JS
+------------------------------------ Point 1: Hooks in React JS ------------------------------------
 
 Ques) What is the Hooks in React JS?
 Ans) A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. 
@@ -101,7 +101,7 @@ Ans ) Redux can be defined in following points
 
 3) It doesn't belong to the component state.
 
-Point 2: Hooks in Details
+------------------------------------ Point 2: Hooks in Details ------------------------------------
 More About Hooks in React JS
 Hooks were added to React in version 16.8. Hooks let you use state and other React features without writing a class.
 
@@ -138,7 +138,7 @@ const Blogs = () => {
 
 export default Blogs;
 
-Point 3: Hooks it's types
+------------------------------------ Point 3: Hooks it's types ------------------------------------
 React useState Hook
 useState is a Hook that lets you add React state to function components. 
 
@@ -146,8 +146,8 @@ Importing useState
 To use useState, first we need to import useState and initialize it, you can import it from react like this:
 
 import { useState } from "react";
-_____________________________________________________________________________________________________________________________________________________________________
-Point 4: Initializing useState
+
+------------------------------------ Point 4: Initializing useState ------------------------------------
 You can initialize state like this:
 
 import { useState } from "react";
@@ -157,8 +157,8 @@ const App = () => {
 };
 useState takes initial state as argument and gives a state and a function(setName in this case) to update that state as we can't directly change/update a state.
  Also, these state names are just like variables, hence you can name them anything you like. 
-_____________________________________________________________________________________________________________________________________________________________________
-Point 5: Reading a state
+
+------------------------------------ Point 5: Reading a state ------------------------------------
 As mentioned earlier, it returns a state and a function to change/update that state. Hence, everything is stored in name. We can read states just like variables:
 
 import { useState } from "react";
@@ -168,8 +168,8 @@ const App = () => {
 
     return <h1>My name is {name}</h1>
 };
-_____________________________________________________________________________________________________________________________________________________________________
-Point 6: Updating a state
+
+------------------------------------ Point 6: Updating a state ------------------------------------
 To update state we use the function it returns to update state, in this case: setName. State can be updated like this:
 
 import { useState } from "react";
@@ -180,8 +180,8 @@ const App = () => {
 
     return <h1>My name is {name}</h1>
 };
-_____________________________________________________________________________________________________________________________________________________________________
-Point 7: What can state hold?
+
+------------------------------------ Point 7: What can state hold? ------------------------------------
 Like normal variables, state can hold any datatype like strings, numbers, booleans, arrays, objects, objects in arrays, arrays in objects. For example:
 
 import { useState } from "react";
@@ -194,8 +194,8 @@ const App = () => {
 
     return <h1>My name is {data.name} and my age is {data.age}</h1>
 };
-_____________________________________________________________________________________________________________________________________________________________________
-Point 8: Updating Objects and Arrays in State
+
+------------------------------------ Point 8: Updating Objects and Arrays in State ------------------------------------
 import { useState } from "react";
 
 const App = () => {
@@ -210,8 +210,8 @@ const App = () => {
 };
 
 export default App;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 9: React useEffect Hook
+
+------------------------------------ Point 9: React useEffect Hook ------------------------------------
 The useEffect Hook allows you to perform side effects in your components.
 
 useEffect accepts two arguments. The second one is optional. 
@@ -233,8 +233,8 @@ function Home() {
 }
 
 export default Home;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 10: Runs on first render:
+
+------------------------------------ Point 10: Runs on first render: ------------------------------------
 Code Example:
 import { useState, useEffect } from "react";
 
@@ -251,8 +251,8 @@ function Home() {
 }
 
 export default Home;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 11: Runs when data changes:
+
+------------------------------------ Point 11: Runs when data changes: ------------------------------------
 Code Example:
 import { useState, useEffect } from "react";
 
@@ -277,8 +277,8 @@ function Home() {
 }
 
 export default Home;
-_____________________________________________________________________________________________________________________________________________________________________
-Point 12: API Call
+
+------------------------------------ Point 12: API Call ------------------------------------
 What is an API call?
 Application programming interfaces (APIs) are a way for one program to interact with another.
  API calls are the medium by which they interact. An API call, or API request, 
@@ -293,7 +293,7 @@ Because APIs are integrated into almost all web applications today, API calls ta
 scenes all the time. Suppose someone searches for bus tickets on a travel website. The travel website 
 sends an API call to the various bus companies' servers and receives back information about what rides are available 
 and how much they cost. From the user's perspective, this process should be almost instantaneous.
-_____________________________________________________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------------------------------------
 Shortcuts use in this IDE Visual Studio Code
 To open Explorer : Ctrl + Shift + E 
 Format Document : Ctrl + Shift + F 
