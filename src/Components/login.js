@@ -1,63 +1,65 @@
-import { useState } from "react"; // Import useState hook here
-import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
-import { useNavigate } from "react-router-dom";
+import { useState } from "react"  // Import useState hook here
+import NavigationComponent from "./Navigation"  // Importing Navigation bar in login.js
+import { useNavigate } from "react-router-dom" 
 
 const LoginComponent = () => {
 
-    const [validationNameError, setvalidationNameError] = useState('');
-    const [validationPasswordError, setvalidationPasswordError] = useState('');
-    const [validationUserNameError, setvalidationUserNameError] = useState('');
-    const [validationUserPasswordError, setvalidationUserPasswordError] = useState('');
+    const [validationNameError, setvalidationNameError] = useState('') 
+    const [validationPasswordError, setvalidationPasswordError] = useState('') 
+    const [validationUserNameError, setvalidationUserNameError] = useState('') 
+    const [validationUserPasswordError, setvalidationUserPasswordError] = useState('') 
+    const [loginErrorMessage, setLoginErrorMessage] = useState('') 
 
-    const navigate = useNavigate();
+
+    const navigate = useNavigate() 
 
     // useState for setting the name
-    const [inputName, setInputName] = useState('');
+    const [inputName, setInputName] = useState('') 
 
     // function to handle the InputName
     function handleInputName(event) {
-        setInputName(event.target.value);
+        setInputName(event.target.value) 
     }
 
     // useState for setting the name
-    const [inputPassword, setinputPassword] = useState('');
+    const [inputPassword, setinputPassword] = useState('') 
 
     // function to handle the InputName
     function handleInputPassword(event) {
-        setinputPassword(event.target.value);
+        setinputPassword(event.target.value) 
     }
     
     // function to handle setUserNameErrorMessage comes from server for registered username
     const setUserNameErrorMessage = (errorUserNameMessage) => {
         setvalidationUserNameError(errorUserNameMessage)
-        return false;
+        return false 
     }
 
     // function to handle setUserPasswordErrorMessage comes from server for registered user password 
     const setUserPasswordErrorMessage = (errorUserPasswordMessage) => {
         setPasswordErrorMessage(errorUserPasswordMessage)
-        return false;
+        return false 
     }
 
     // function to handle setNameErrorMessage
     const setNameErrorMessage = (errorNameMessage) => {
         setvalidationNameError(errorNameMessage)
-        return false;
+        return false 
     }
 
     // function to handle setPasswordErrorMessage
     const setPasswordErrorMessage = (errorPasswordMessage) => {
         setvalidationPasswordError(errorPasswordMessage)
-        return false;
+        return false 
     }
 
     // function to handle validation
     const handleValidation = (event) => {
-        event.preventDefault();
+        event.preventDefault() 
         // when inputName were left blank 
         if (inputName === '') {
             console.log("Name slot is empty")
-            return setNameErrorMessage("Name field is empty");
+            return setNameErrorMessage("Name field is empty") 
         }
         else {
             setvalidationNameError('') // set the validation error when inputName was filled. 
@@ -66,18 +68,22 @@ const LoginComponent = () => {
         // When inputPassword were left blank  
         if (inputPassword === '') {
             console.log("Password slot is empty")
-            return setPasswordErrorMessage("Password field is empty"); 
+            return setPasswordErrorMessage("Password field is empty")  
         }
         else {
             setvalidationPasswordError('') // set the validation password when inputPassword was filled.
         }
         loginApiCall().then(response => {
-            navigate("/home");
+            console.log(response) 
+            console.log(response.data);
+            if(response?.data?.error) {
+                setLoginErrorMessage(response?.data?.error) 
+            } else {
+              navigate("/home", { state : {token : response?.signInToken }}) ;
+            }
             // alert('You have been successfully logged in!!') 
-        });
+        }) 
     }
-
-
     
     // loginApi call
     const loginApiCall = async () => {
@@ -88,33 +94,16 @@ const LoginComponent = () => {
             password: inputPassword
         }
     // Error comes when both user name and password were input incorrectly
- 
-        if (data.username != 'nitin82'){
-            return setUserNameErrorMessage("Invalid User Name")
-        }
-        else {
-            setvalidationUserNameError('')
-        }
-        if (data.password != 'test123'){
-            return setUserPasswordErrorMessage("Incorrect Pasword")
-        }
-        else {
-            setvalidationUserPasswordError('')
-        }
- 
+        console.log("Running...")
+
         const response = await fetch(url, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
-            cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: "same-origin", // include, *same-origin, omit
             headers: {
                 "Content-Type": "application/json",
-                // 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            redirect: "follow", // manual, *follow, error
-            referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
             body: JSON.stringify(data), // body data type must match "Content-Type" header
-        });
-        return response.json(); // parses JSON response into native JavaScript objects
+        }) 
+        return response.json()  // parses JSON response into native JavaScript objects
     }
     return (
         <div id="LoginComponent">
@@ -202,6 +191,7 @@ const LoginComponent = () => {
                     <div className='my-2 login_css'>
                         <button type="login" className="btn btn-danger col-sm-3">Login</button>
                     </div>
+                    <p style={{color:"red"}}>{loginErrorMessage}</p>
                     {/* Submit Button block ends here */}
 
                 </form>
@@ -210,7 +200,7 @@ const LoginComponent = () => {
             </div>
         </div>
 
-    );
+    ) 
 }
 
-export default LoginComponent;
+export default LoginComponent 
