@@ -31,7 +31,7 @@ const HomeComponent = () => {
             setRestuarants(resp);
         })
     }, [initApi]);
-//  <a href="/about">About</a> ---> This is an example how to navigate to another page.
+//  <a href="/about">About</a> ---> This is an example how to navigate to another page. 
 
     // Accessing full another page by clicking on card having images , title and description...example card components in bootstrap
     const cardOneApiCall = async () => {
