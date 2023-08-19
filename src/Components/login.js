@@ -89,11 +89,11 @@ const LoginComponent = () => {
     const loginApiCall = async () => {
         const url = "http://localhost:8080/login"
 
+    // Error comes when both user name and password were input incorrectly
         const data = {
             username: inputName,
             password: inputPassword
         }
-    // Error comes when both user name and password were input incorrectly
         console.log("Running...")
 
         const response = await fetch(url, {

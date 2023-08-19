@@ -12,8 +12,6 @@ const RouterConfig = () => {
 
     return (
         <div id="RouterConfig">
-            {/* This is the way in which router can be written with component as <BrowserRouter> , <Routes> and lastly
-            <Route> and corresponding closing all the components as </BrowserRouter> , </Routes> and </Routes> */}
             <BrowserRouter>
                 <Routes>
                     <Route exact path='/' element={< LoginComponent />} />            {/* Navigate to login page */}      
@@ -21,6 +19,7 @@ const RouterConfig = () => {
                     <Route exact path='/about' element={< AboutComponent />} />       {/* Navigate to about page */}
                     <Route exact path='/contact' element={< ContactComponent />} />   {/* Navigate to contact page */}
                     <Route exact path='/register' element={< RegisterComponent />} /> {/* Navigate to register page*/}
+                    <Route exact path="/https://en.wikipedia.org/wiki/Burger_King"/>
                 </Routes>
             </BrowserRouter>
         </div>
