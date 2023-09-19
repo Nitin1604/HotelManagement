@@ -74,6 +74,7 @@ const LoginComponent = () => {
             setvalidationPasswordError('') // set the validation password when inputPassword was filled.
         }
         loginApiCall().then(response => {
+            // console.log("STEP 3")
             console.log(response) 
             console.log(response.data);
             if(response?.data?.error) {
@@ -82,12 +83,15 @@ const LoginComponent = () => {
               navigate("/home", { state : {token : response?.signInToken }}) ;
             }
             // alert('You have been successfully logged in!!') 
-        }) 
+        })
+        // console.log("STEP 4")
+        // console.log("I am Done");
+ 
     }
     
     // loginApi call
     const loginApiCall = async () => {
-        const url = "http://localhost:8080/login"
+        const url = "http://127.0.0.1:8080/login"
 
     // Error comes when both user name and password were input incorrectly
         const data = {
@@ -95,6 +99,7 @@ const LoginComponent = () => {
             password: inputPassword
         }
         console.log("Running...")
+        // console.log("STEP 1")
 
         const response = await fetch(url, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -103,6 +108,7 @@ const LoginComponent = () => {
             },
             body: JSON.stringify(data), // body data type must match "Content-Type" header
         }) 
+        // console.log("STEP 2")
         return response.json()  // parses JSON response into native JavaScript objects
     }
     return (

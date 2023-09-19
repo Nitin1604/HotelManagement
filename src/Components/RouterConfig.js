@@ -14,16 +14,17 @@ const RouterConfig = () => {
         <div id="RouterConfig">
             <BrowserRouter>
                 <Routes>
-                    <Route exact path='/' element={< LoginComponent />} />            {/* Navigate to login page */}      
-                    <Route exact path='/home' element={< HomeComponent />} />         {/* Navigate to home page */}
-                    <Route exact path='/about' element={< AboutComponent />} />       {/* Navigate to about page */}
-                    <Route exact path='/contact' element={< ContactComponent />} />   {/* Navigate to contact page */}
-                    <Route exact path='/register' element={< RegisterComponent />} /> {/* Navigate to register page*/}
-                    <Route exact path="/https://en.wikipedia.org/wiki/Burger_King"/>
+                    <Route exact path='/' element={< LoginComponent />} />                 
+                    <Route exact path='/home' element={< HomeComponent />} />      
+                    <Route exact path='/about' element={< AboutComponent />} />      
+                    <Route exact path='/contact' element={< ContactComponent />} />  
+                    <Route exact path='/register' element={< RegisterComponent />} /> 
+                    <Route exact path='/page1' element={<page1Component/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>
-    )
+     )
 }
 
 export default RouterConfig;

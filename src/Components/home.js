@@ -31,20 +31,19 @@ const HomeComponent = () => {
             setRestuarants(resp);
         })
     }, [initApi]);
-/*
- <a href="/about">About</a> ---> This is an example how to navigate to another page. 
-Burger King Wikipedia : https://en.wikipedia.org/wiki/Burger_King
+    /*
+     <a href="/about">About</a> ---> This is an example how to navigate to another page. 
+    Burger King Wikipedia : https://en.wikipedia.org/wiki/Burger_King
+    */
 
-// Accessing full another page by clicking on card having images , title and description...example card components in bootstrap
-*/
-const cardOneApiCall = async () => {
-    const url = 'http://localhost:8080/dashboards/uuid-12343'
-    const response = await fetch(url,{
-        method: 'GET'
-    })
-    return response.json()
-}
-    
+    const cardOneApiCall = async () => {
+        const url = 'http://localhost:8080/dashboards/uuid-1234'
+        const response = await fetch(url, {
+            method: 'GET'
+        })
+        return response.json()
+    }
+
 
     return (
         <>
@@ -68,6 +67,9 @@ const cardOneApiCall = async () => {
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
+                                                <a href="/page1">
+                                                    <button className="btn btn-danger my-2">View More</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </>

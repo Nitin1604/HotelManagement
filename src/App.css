@@ -72,3 +72,7 @@ img {
 .tx-center {
     text-align: center;
 }
+
+.card-body {
+    padding: 0.25rem;
+}
