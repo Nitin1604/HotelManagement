@@ -26,10 +26,14 @@ const NavigationComponent = () => {
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/contact">Contact Us</a>
                             </li>
-                            
+
                             {/* Navigation for Register Components */}
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/register">Register</a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="/page1">BurgerKing</a>
                             </li>
                         </ul>
                     </div>

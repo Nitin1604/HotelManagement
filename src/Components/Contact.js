@@ -1,5 +1,5 @@
 import { useState } from "react"; // Import useState hook here
-import NavigationComponent from "./Navigation"; // Importing Navigation bar in login.js
+import NavigationComponent from "./Navigation"; // Importing Navigation bar in Contact.js
 
 const ContactComponent = () => {
     

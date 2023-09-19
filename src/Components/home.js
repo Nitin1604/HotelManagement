@@ -67,9 +67,7 @@ const HomeComponent = () => {
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
-                                                <a href="/page1">
                                                     <button className="btn btn-danger my-2">View More</button>
-                                                </a>
                                             </div>
                                         </div>
                                     </>
