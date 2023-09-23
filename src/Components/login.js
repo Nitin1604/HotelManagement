@@ -74,7 +74,7 @@ const LoginComponent = () => {
             setvalidationPasswordError('') // set the validation password when inputPassword was filled.
         }
         loginApiCall().then(response => {
-            // console.log("STEP 3")
+            console.log("STEP 3 : Executing Fourth")
             console.log(response)
             console.log(response.data);
             if (response?.data?.error) {
@@ -84,8 +84,8 @@ const LoginComponent = () => {
             }
             // alert('You have been successfully logged in!!') 
         })
-        // console.log("STEP 4")
-        // console.log("I am Done");
+        console.log("STEP 4 : Executing Second")
+        console.log("I am Done");
 
     }
 
@@ -99,7 +99,7 @@ const LoginComponent = () => {
             password: inputPassword
         }
         console.log("Running...")
-        // console.log("STEP 1")
+        console.log("STEP 1 : Executing First")
 
         const response = await fetch(url, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -108,7 +108,7 @@ const LoginComponent = () => {
             },
             body: JSON.stringify(data), // body data type must match "Content-Type" header
         })
-        // console.log("STEP 2")
+        console.log("STEP 2 : Executing Third")
         return response.json()  // parses JSON response into native JavaScript objects
     }
     return (

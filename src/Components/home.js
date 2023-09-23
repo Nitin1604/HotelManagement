@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import NavigationComponent from "./Navigation";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -10,6 +10,8 @@ const HomeComponent = () => {
     const location = useLocation();
     const token = location.state?.token;
     const [restuarants, setRestuarants] = useState([]);
+    const navigate = useNavigate()
+
     // DashboardApi call
     const homeApiCall = async () => {
         const url = "http://localhost:8080/dashboard"
@@ -44,6 +46,13 @@ const HomeComponent = () => {
         return response.json()
     }
 
+    const handleClick = (hotelId)=>{
+        console.log("HandleClick clicked", hotelId);
+        navigate("/page1", { state : { body : {
+            clickedHotelId : hotelId
+        }}});
+    }
+
 
     return (
         <>
@@ -67,7 +76,7 @@ const HomeComponent = () => {
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
-                                                    <button className="btn btn-danger my-2">View More</button>
+                                                    <button className="btn btn-danger my-2" onClick={()=>handleClick(restuarant.id)}>View More</button>
                                             </div>
                                         </div>
                                     </>

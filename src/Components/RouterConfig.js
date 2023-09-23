@@ -6,6 +6,7 @@ import AboutComponent from "./About";
 import ContactComponent from "./Contact";
 import React from 'react';
 import RegisterComponent from "./Register";
+import HotelComponent from "./pageRender";  // Import your page here
 
 
 const RouterConfig = () => {
@@ -19,7 +20,7 @@ const RouterConfig = () => {
                     <Route exact path='/about' element={< AboutComponent />} />      
                     <Route exact path='/contact' element={< ContactComponent />} />  
                     <Route exact path='/register' element={< RegisterComponent />} /> 
-                    <Route exact path='/page1' element={<page1Component/>}/>
+                    <Route exact path='/pageRender' element={<HotelComponent/>}/>
 
                 </Routes>
             </BrowserRouter>

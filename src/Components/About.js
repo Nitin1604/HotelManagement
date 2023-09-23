@@ -9,7 +9,9 @@ const AboutComponent = () => {
         <>
             <div id="AboutComponent">
                 <NavigationComponent />
+
                 {/* content start here */}
+                
                 <div className="content">
                     {/* Row 1 */}
                     <div className="row">
@@ -33,24 +35,31 @@ const AboutComponent = () => {
 
                         <div className="col-sm-2">
                             <div className="card mx-2 my-2">
+
                                 {/* card-body will start here */}
                                 <div className="card-body1">
                                     <h5 className="card-title">FabExpress IVY Inn Sector 35</h5>
+                                
                                     {/* card-text start here */}
                                     <p className="card-text">This hotel provides many facilities such as Free WiFi, 
                                     Free Parking, Room Service , Non Smoking Rooms and Fabulous breakfast.
                                     Featuring 3-star accommodation.
+                                
                                         {/* Image "hotel2" will inserted here */}
                                         <img src={hotel2} alt="hotel2" />
                                     </p>
                                     {/* card-text ends here */}
                                 </div>
                                 {/* card-body will ends here */}
+
                             </div>
                         </div>
                     </div>
+                    
                     {/* Row 1 */}
+                
                 </div>
+                
                 {/* content ends here */}
             </div>
         </>

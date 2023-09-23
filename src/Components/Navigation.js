@@ -32,9 +32,9 @@ const NavigationComponent = () => {
                                 <a className="nav-link active" aria-current="page" href="/register">Register</a>
                             </li>
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/page1">BurgerKing</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
