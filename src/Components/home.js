@@ -36,14 +36,7 @@ const HomeComponent = () => {
     Burger King Wikipedia : https://en.wikipedia.org/wiki/Burger_King
     */
 
-    const cardOneApiCall = async () => {
-        const url = 'http://localhost:8080/dashboards/uuid-1234'
-        const response = await fetch(url, {
-            method: 'GET'
-        })
-        return response.json()
-    }
-
+ 
     const handleClick = (hotelId) => {
         console.log("HandleClick clicked", hotelId);
         navigate("/pageRender", {

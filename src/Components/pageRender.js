@@ -1,10 +1,12 @@
 import NavigationComponent from "./Navigation";  // Navigation bar included...
 import { useLocation } from "react-router-dom";
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import hotel1 from './hotel1.jpg';
 
 const HotelComponent = () => {
+    const initApi = true;
     const location = useLocation();
     const token = location.state?.token;
     const [restuarants, setRestuarants] = useState([]);
@@ -21,6 +23,14 @@ const HotelComponent = () => {
         })
         return response.json()
     }
+    useEffect(() => {
+        console.log(token)
+        const promiseResponse = pageRenderApiCall();
+        promiseResponse.then((resp) => {
+            console.log('pageRender response: ', resp)
+            setRestuarants(resp);
+        })
+    }, [initApi]);
 
     return (
         <>
@@ -34,18 +44,18 @@ const HotelComponent = () => {
                 <div className="content">
 
                     {/* Row start here */}
-                    <div class="row mx-4 my-3">
+                    <div className="row mx-4 my-3">
 
                         {/* card start here */}
-                        <div class="card">
-                            <img class="card-img-top" src={hotel1} alt="Image not found" />
+                        <div className="card">
+                            <img className="card-img-top" src={hotel1} alt="Image not found" />
 
                             {/* Card body start here */}
-                            <div class="card-body">
-                                <h5 class="card-title">McDonald</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">McDonald</h5>
 
                                 {/* Card text start here */}
-                                <p class="card-text">
+                                <p className="card-text">
                                     Mcdonald's Shop is located near Noida Sector 16. It is also good place to visit and eat fast food.
                                 </p>
                                 {/* Card text ends here */}
