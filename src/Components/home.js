@@ -36,7 +36,7 @@ const HomeComponent = () => {
     Burger King Wikipedia : https://en.wikipedia.org/wiki/Burger_King
     */
 
- 
+
     const handleClick = (hotelId) => {
         console.log("HandleClick clicked", hotelId);
         navigate("/pageRender", {
@@ -68,6 +68,7 @@ const HomeComponent = () => {
                                                 {/* All image are used by the API Call */}
                                                 <img src={restuarant.imageUrl} alt="foodCourt1" />
                                                 {/* All image are used by the API Call */}
+                                                
                                                 <div className="card-body">
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
