@@ -1,27 +1,70 @@
 import NavigationComponent from "./Navigation";  // Navigation bar included...
+import { useLocation } from "react-router-dom";
 import React from "react";
+import { useState } from "react";
+import hotel1 from './hotel1.jpg';
 
 const HotelComponent = () => {
+    const location = useLocation();
+    const token = location.state?.token;
+    const [restuarants, setRestuarants] = useState([]);
+
+    // API Call for pageRender
+    const pageRenderApiCall = async () => {
+        const url = "http://localhost:8080/dashboards/uuid-12343"
+        const response = await fetch(url, {
+
+            method: "GET", // *GET, POST, PUT, DELETE, etc.
+            headers: {
+                "signInToken": token
+            },
+        })
+        return response.json()
+    }
+
     return (
-        <div id="page1Component">
-            <NavigationComponent />
-            {/* Inserting html document here */}
-            <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div className="col p-4 d-flex flex-column position-static">
-                    <strong className="d-inline-block mb-2 text-primary">World</strong>
-                    <h3 className="mb-0">Featured post</h3>
-                    <div className="mb-1 text-muted">Nov 12</div>
-                    <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" className="stretched-link">Continue reading</a>
-                </div>
-                <div className="col-auto d-none d-lg-block">
-                    <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <>
+
+            {/* HotelComponent start here */}
+            <div id="HotelComponent">
+
+                <NavigationComponent />
+
+                {/* Card content start here */}
+                <div className="content">
+
+                    {/* Row start here */}
+                    <div class="row mx-4 my-3">
+
+                        {/* card start here */}
+                        <div class="card">
+                            <img class="card-img-top" src={hotel1} alt="Image not found" />
+
+                            {/* Card body start here */}
+                            <div class="card-body">
+                                <h5 class="card-title">McDonald</h5>
+
+                                {/* Card text start here */}
+                                <p class="card-text">
+                                    Mcdonald's Shop is located near Noida Sector 16. It is also good place to visit and eat fast food.
+                                </p>
+                                {/* Card text ends here */}
+
+                            </div>
+                            {/* Card body ends here */}
+
+                        </div>
+                        {/* card ends here */}
+
+                    </div>
+                    {/* Row ends here */}
 
                 </div>
+                {/* Card content ends here */}
+
             </div>
-            {/* Inserting html document here */}
-
-        </div>
+            {/* HotelComponent ends here */}
+        </>
     )
 
 }

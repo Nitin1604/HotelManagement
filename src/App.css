@@ -76,3 +76,8 @@ img {
 .card-body {
     padding: 0.25rem;
 }
+
+/* About.js css */
+.card-img-bottom {
+    padding: 4px;
+}

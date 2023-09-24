@@ -4,8 +4,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const HomeComponent = () => {
-
-
     const initApi = true;
     const location = useLocation();
     const token = location.state?.token;
@@ -46,11 +44,16 @@ const HomeComponent = () => {
         return response.json()
     }
 
-    const handleClick = (hotelId)=>{
+    const handleClick = (hotelId) => {
         console.log("HandleClick clicked", hotelId);
-        navigate("/page1", { state : { body : {
-            clickedHotelId : hotelId
-        }}});
+        navigate("/pageRender", {
+            state: {
+                body: {
+                    clickedHotelId: hotelId
+                }
+            }
+        }
+        );
     }
 
 
@@ -76,7 +79,7 @@ const HomeComponent = () => {
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
-                                                    <button className="btn btn-danger my-2" onClick={()=>handleClick(restuarant.id)}>View More</button>
+                                                <button className="btn btn-danger my-2" onClick={() => handleClick(restuarant.id)}>View More</button>
                                             </div>
                                         </div>
                                     </>
