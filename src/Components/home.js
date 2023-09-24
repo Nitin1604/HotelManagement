@@ -66,7 +66,7 @@ const HomeComponent = () => {
                                             <div className="card mx-2 my-4">
 
                                                 {/* All image are used by the API Call */}
-                                                <img src={restuarant.imageUrl} alt="foodCourt1" />
+                                                <img src={restuarant.imageUrl} alt="Image not found" />
                                                 {/* All image are used by the API Call */}
 
                                                 {/* Card body start here */}
@@ -75,7 +75,7 @@ const HomeComponent = () => {
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
                                                 {/* Card body ends here */}
-                                                
+
                                                 <button className="btn btn-danger my-2" onClick={() => handleClick(restuarant.id)}>View More</button>
                                             </div>
                                         </div>
