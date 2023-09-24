@@ -68,11 +68,14 @@ const HomeComponent = () => {
                                                 {/* All image are used by the API Call */}
                                                 <img src={restuarant.imageUrl} alt="foodCourt1" />
                                                 {/* All image are used by the API Call */}
-                                                
+
+                                                {/* Card body start here */}
                                                 <div className="card-body">
                                                     <h5 className="card-title">{restuarant.title}</h5>
                                                     <p className="card-text">{restuarant.description}</p>
                                                 </div>
+                                                {/* Card body ends here */}
+                                                
                                                 <button className="btn btn-danger my-2" onClick={() => handleClick(restuarant.id)}>View More</button>
                                             </div>
                                         </div>
