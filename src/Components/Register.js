@@ -81,7 +81,7 @@ const RegisterComponent = () => {
             return setNameErrorMessage("Name is left blank");
         }
         else {
-            setvalidationNameError('') // set the validation error when inputName was filled.
+            setvalidationNameError('') // set the validation error when inputName was empty.
         }
 
         // When inputEmail were left blank 
@@ -90,7 +90,7 @@ const RegisterComponent = () => {
             return setEmailErrorMessage("Email is left blank"); 
         }
         else {
-            setvalidationEmailError('') // set the validation error when inputEmail was filled.
+            setvalidationEmailError('') // set the validation error when inputEmail was empty.
         }
 
         // When inputContact were left blank 
@@ -99,7 +99,7 @@ const RegisterComponent = () => {
             return setPasswordErrorMessage("Password is left blank"); 
         }
         else {
-            setvalidationPasswordError('') // set the validation error when inputPassword was filled.
+            setvalidationPasswordError('') // set the validation error when inputPassword was empty.
         }
 
         // When inputConfirmPassword were left blank
