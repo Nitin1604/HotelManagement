@@ -80,4 +80,5 @@ img {
 /* About.js css */
 .card-img-bottom {
     padding: 4px;
+    max-width: 540px;
 }
