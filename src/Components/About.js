@@ -27,8 +27,8 @@ const AboutComponent = () => {
                             <h1>Best Hotel in India</h1>
                             <p className="lead text-muted">These are the some awesome hotel in India you must visit these hotels.</p>
                             <p>
-                                <a href="#" className="btn btn-primary my-2 mx-2">Hotel open Hours: 8am to 9pm</a>
-                                <a href="#" className="btn btn-danger my-2">Hotel closed Hours: 9pm to 8am</a>
+                                <a href="#" className="btn btn-primary my-2 mx-2">Hotel open hours: 8am to 9pm</a>
+                                <a href="#" className="btn btn-danger my-2">Hotel closed hours: 9pm to 8am</a>
                             </p>
                         </div>
                     </section>
