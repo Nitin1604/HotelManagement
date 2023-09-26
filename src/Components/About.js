@@ -24,7 +24,7 @@ const AboutComponent = () => {
                     {/* Jumbotron content start here */}
                     <section className="jumbotron text-center">
                         <div className="container">
-                            <h1>Best Hotel in India</h1>
+                            <h1>Best Hotels in India</h1>
                             <p className="lead text-muted">These are the some awesome hotel in India you must visit these hotels.</p>
                             <p>
                                 <a href="#" className="btn btn-primary my-2 mx-2">Hotel open hours: 8am to 9pm</a>
