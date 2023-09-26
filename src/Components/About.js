@@ -289,6 +289,7 @@ const AboutComponent = () => {
                     {/* div's className as album content ends here */}
 
                 </div>
+                {/* Content ends here */}
 
                 <footer className="text-muted">
                     <div className="container">
@@ -301,7 +302,6 @@ const AboutComponent = () => {
                 </footer>
 
             </div>
-            {/* Content ends here */}
 
             {/* AboutComponent ends here */}
 
