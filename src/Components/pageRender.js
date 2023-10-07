@@ -8,18 +8,20 @@ import hotel1 from './hotel1.jpg';
 const HotelComponent = () => {
     const initApi = true;
     const location = useLocation();
-    const token = location.state?.token;
-    const [restuarants, setRestuarants] = useState([]);
+    const token = localStorage.getItem("apiToken");
+    const hotelId = location.state?.body?.clickedHotelId;
+
+    const [restuarant, setRestuarant] = useState();
 
     // API Call for pageRender
     const pageRenderApiCall = async () => {
-        const url = "http://localhost:8080/dashboards/uuid-12343"
+        const url = `http://localhost:8080/dashboards/${hotelId}`;
+        
         const response = await fetch(url, {
-
             method: "GET", // *GET, POST, PUT, DELETE, etc.
             headers: {
                 "signInToken": token
-            },
+            }
         })
         return response.json()
     }
@@ -28,7 +30,7 @@ const HotelComponent = () => {
         const promiseResponse = pageRenderApiCall();
         promiseResponse.then((resp) => {
             console.log('pageRender response: ', resp)
-            setRestuarants(resp);
+            setRestuarant(resp);
         })
     }, [initApi]);
 
@@ -48,16 +50,14 @@ const HotelComponent = () => {
 
                         {/* card start here */}
                         <div className="card">
-                            <img className="card-img-top" src={hotel1} alt="Image not found" />
+                            <img className="card-img-top" src={restuarant?.imageUrl} alt="Image not found" />
 
                             {/* Card body start here */}
                             <div className="card-body">
-                                <h5 className="card-title">McDonald</h5>
+                                <h5 className="card-title">{restuarant?.title}</h5>
 
                                 {/* Card text start here */}
-                                <p className="card-text">
-                                    Mcdonald's Shop is located near Noida Sector 16. It is also good place to visit and eat fast food.
-                                </p>
+                                <p className="card-text">{restuarant?.description}                                </p>
                                 {/* Card text ends here */}
 
                             </div>

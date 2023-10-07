@@ -6,7 +6,7 @@ import { useState } from "react";
 const HomeComponent = () => {
     const initApi = true;
     const location = useLocation();
-    const token = location.state?.token;
+    const token = localStorage.getItem("apiToken");
     const [restuarants, setRestuarants] = useState([]);
     const navigate = useNavigate()
 
@@ -42,7 +42,7 @@ const HomeComponent = () => {
         navigate("/pageRender", {
             state: {
                 body: {
-                    clickedHotelId: hotelId
+                    clickedHotelId: hotelId,
                 }
             }
         }

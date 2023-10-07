@@ -56,6 +56,7 @@ const LoginComponent = () => {
     // function to handle validation
     const handleValidation = (event) => {
         event.preventDefault()
+        
         // when inputName were left blank 
         if (inputName === '') {
             console.log("Name slot is empty")
@@ -80,7 +81,8 @@ const LoginComponent = () => {
             if (response?.data?.error) {
                 setLoginErrorMessage(response?.data?.error)
             } else {
-                navigate("/home", { state: { token: response?.signInToken } });
+                localStorage.setItem("apiToken", response?.signInToken);
+                navigate("/home");
             }
             // alert('You have been successfully logged in!!') 
         })

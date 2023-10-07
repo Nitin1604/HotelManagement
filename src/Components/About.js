@@ -27,8 +27,36 @@ const AboutComponent = () => {
                             <h1>Best Hotels in India</h1>
                             <p className="lead text-muted">These are the some awesome hotel in India you must visit these hotels.</p>
                             <p>
-                                <a href="#" className="btn btn-primary my-2 mx-2">Hotel open hours: 8am to 9pm</a>
-                                <a href="#" className="btn btn-danger my-2">Hotel closed hours: 9pm to 8am</a>
+                                <p>
+                                    <a className="btn btn-danger mx-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Hotel open hours: 8am to 9pm</a>
+                                    <button className="btn btn-success mx-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Hotel closed hours: 9pm to 8am</button>
+
+
+                                </p>
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div className="card text-danger">
+                                                <p>
+                                                    Hotel is Open : Customers can visit to our hotel and explore more.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div className="card text-success">
+                                                <p>
+                                                    Hotel Closed : Visit tommorrow at this hotel.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                {/* <a href="#" className="btn btn-primary my-2 mx-2">Hotel open hours: 8am to 9pm</a>
+                                <a href="#" className="btn btn-danger my-2">Hotel closed hours: 9pm to 8am</a> */}
                             </p>
                         </div>
                     </section>
@@ -86,7 +114,7 @@ const AboutComponent = () => {
                                                 Free Parking, Room Service.
                                             </p>
                                             {/* card-text2 ends here */}
-                                           
+
                                         </div>
                                         {/* card-body2 ends here */}
 
@@ -103,7 +131,7 @@ const AboutComponent = () => {
                                     <div className="card mb-4 shadow-sm">
                                         <img className="card-img-bottom" src={room} alt="Image not found" />
 
-                                         {/* card-body3 start here */}
+                                        {/* card-body3 start here */}
                                         <div className="card-body">
                                             <h6 className="card-title">5 star hotel</h6>
 
@@ -114,7 +142,7 @@ const AboutComponent = () => {
                                             {/* card-text3 ends here */}
 
                                         </div>
-                                         {/* card-body3 ends here */}
+                                        {/* card-body3 ends here */}
 
                                     </div>
                                     {/* Bringing shadow in card-content3 ends here */}
@@ -158,7 +186,7 @@ const AboutComponent = () => {
                                         {/* card-body5 start here */}
                                         <div className="card-body">
                                             <h6 className="card-title">THE OBEROI UDAIVILAS</h6>
-                                            
+
                                             {/* card-text5 start here */}
                                             <p className="card-text">
                                                 Every single room of this luxurious hotel reflects elegance and is designed to bestow the utmost comfort.
@@ -169,18 +197,18 @@ const AboutComponent = () => {
                                         {/* card-body5 ends here */}
 
                                     </div>
-                                      {/* Bringing shadow in card-content5 ends here */}
+                                    {/* Bringing shadow in card-content5 ends here */}
 
                                 </div>
                                 {/* column5 content ends here */}
 
                                 {/* column6 content start here */}
                                 <div className="col-md-4">
-                                    
+
                                     {/* Bringing shadow in card-content6 start here */}
                                     <div className="card mb-4 shadow-sm">
                                         <img className="card-img-bottom" src={hotel5} alt="Image not found" />
-                                        
+
                                         {/* card-body6 start here */}
                                         <div className="card-body">
                                             <h6 className="card-title">LEELA PALACE UDAIPUR</h6>
@@ -210,10 +238,10 @@ const AboutComponent = () => {
                                         {/* card-body7 start here  */}
                                         <div className="card-body">
                                             <h6 className="card-title">TAJ ARAVALI RESORT & SPA</h6>
-                                            
+
                                             {/* card-text7 start here */}
-                                            <p className="card-text"> 
-                                            From the ornate marble flooring to elaborate chandeliers, every part of the resort is designed to perfection.
+                                            <p className="card-text">
+                                                From the ornate marble flooring to elaborate chandeliers, every part of the resort is designed to perfection.
                                             </p>
                                             {/* card-text7 ends here */}
 
@@ -232,11 +260,11 @@ const AboutComponent = () => {
                                     {/* Bringing shadow in card-content8 start here */}
                                     <div className="card mb-4 shadow-sm">
                                         <img className="card-img-bottom" src={hotel7} alt="Image not found" />
-                                          
+
                                         {/* card-body8 start here */}
                                         <div className="card-body">
                                             <h6 className="card-title">RAMBAGH PALACE</h6>
-                                            
+
                                             {/* card-text8 start here */}
                                             <p className="card-text">
                                                 The Pink city of India, Jaipur has an array of architectural wonders that mirrors India’s glorious heritage.
@@ -258,12 +286,12 @@ const AboutComponent = () => {
                                     {/* Bringing shadow in card-content9 start here */}
                                     <div className="card mb-4 shadow-sm">
                                         <img className="card-img-bottom" src={hotel8} alt="Image not found" />
-                                        
+
                                         {/* card-body9 start here */}
                                         <div className="card-body">
                                             <h6 className="card-title">OBEROI RAJVILAS</h6>
-                                           
-                                           {/* card-text9 start here */}
+
+                                            {/* card-text9 start here */}
                                             <p className="card-text">
                                                 A gem in the vibrant city of Jaipur, Oberoi Rajvilas is unmistakably one of the best hotels in India.
                                             </p>
@@ -294,7 +322,7 @@ const AboutComponent = () => {
                 <footer className="text-muted">
                     <div className="container">
                         <p className="float-right">
-                            <a href="#">Back to top</a>
+                            <a href="#" className="btn btn-success">Back to top</a>
                         </p>
                         <p>Best Hotel in India &copy; All these hotel are best and fully air conditioner.</p>
 

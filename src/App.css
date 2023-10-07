@@ -82,3 +82,12 @@ img {
     padding: 4px;
     max-width: 540px;
 }
+.text-success {
+    color: #28a745!important;
+    height: 118px;
+}
+.text-danger {
+    color: #dc3545!important;
+    height: 118px;
+    margin-left: 319px;
+}

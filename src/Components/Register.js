@@ -234,7 +234,7 @@ const RegisterComponent = () => {
                             <div className="col-sm-4">
                                 <div className="form-group">
                                     <div className="row my-3">
-                                    <label htmlFor="exampleInputConfirmPasword" class="col-sm-3">Confirm Password</label>
+                                    <label htmlFor="exampleInputConfirmPasword" className="col-sm-3">Confirm Password</label>
                                         <div className="col-sm-9">
                                             <input type="password" className="form-control" id="exampleInputPassword" placeholder="Enter your Confirm Password" value={inputConfirmPassword} onChange={handleInputConfirmPassword} />
 
