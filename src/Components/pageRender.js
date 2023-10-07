@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import hotel1 from './hotel1.jpg';
 
 const HotelComponent = () => {
     const initApi = true;
