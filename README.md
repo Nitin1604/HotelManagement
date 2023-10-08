@@ -12,10 +12,10 @@ ________________________________________________________________________________
 [4] Register.js => Register.js page will the help the user to register themselves to get access to login page. I have also used a form and inserted four rows that are Name , email, password and confirm password. If password and confirm password don't match then the error will shown to the user informing that password and confirm password are not match.
 _____________________________________________________________________________________________________________
 [5] RouterConfig.js => If this page were not inserted in react app then for sure react app will not work.
-_____________________________________________________________________________________________________________
-[6] home.js =>
-__________________________________________________________
-[7] login.js
+__________________________________________________________________________________________________________________________________________________________________________________
+[6] home.js => This page will only show up when the person register and then login the form that i have made. This page has 6 card having images , title and description
+__________________________________________________________________________________________________________________________________________________________________________________
+[7] login.js => 
 __________________________________________________________
 [8] pageRender.js
 __________________________________________________________
