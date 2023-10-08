@@ -3,19 +3,19 @@ I have made this project with the help of react js and i am also using api call 
 __________________________________________________________
 I have used 8 files and these files are as follows
 __________________________________________________________
-1) About.js
+[1] About.js
 _______________________
-2) Contact.js
+[2] Contact.js
 _______________________
-3) Navigation.js
+[3] Navigation.js
 _______________________
-4) Register.js
+[4] Register.js
 _______________________
-5) RouterConfig.js
+[5] RouterConfig.js
 _______________________
-6) home.js
+[6] home.js
 _______________________
-7) login.js
+[7] login.js
 _______________________
-8) pageRender.js
+[8] pageRender.js
 _______________________
