@@ -21,10 +21,10 @@ const LoginComponent = () => {
         setInputName(event.target.value)
     }
 
-    // useState for setting the name
+    // useState for setting the password
     const [inputPassword, setinputPassword] = useState('')
 
-    // function to handle the InputName
+    // function to handle the InputPassword
     function handleInputPassword(event) {
         setinputPassword(event.target.value)
     }
