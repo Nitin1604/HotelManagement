@@ -63,7 +63,7 @@ const LoginComponent = () => {
             return setNameErrorMessage("Name field is empty")
         }
         else {
-            setvalidationNameError('') // set the validation error when inputName was filled. 
+            setvalidationNameError('') // set the validation error when inputName was empty. 
         }
 
         // When inputPassword were left blank  
@@ -72,7 +72,7 @@ const LoginComponent = () => {
             return setPasswordErrorMessage("Password field is empty")
         }
         else {
-            setvalidationPasswordError('') // set the validation password when inputPassword was filled.
+            setvalidationPasswordError('') // set the validation password when inputPassword was empty.
         }
         loginApiCall().then(response => {
             console.log("STEP 3 : Executing Fourth")
